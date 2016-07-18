@@ -19,6 +19,13 @@ public static func request<T>(
 ```
 
 ## Introduction
+
+> **Note**: The simplest way to add this library to your application is via **Carthage**. In your `Cartfile`, add the following line:
+>
+> `github "KevinVitale/Network" "master"`
+
+### Example
+
 Let's define a network client that consumes responses from [JSONPlaceholder](http://jsonplaceholder.typicode.com):
 
 ```swift
