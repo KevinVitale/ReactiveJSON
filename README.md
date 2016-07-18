@@ -128,7 +128,7 @@ The _secret sauce_ of `Network` is the `ServiceHostType` protocol. It requires t
 Adopting `JSONService` creates network client singleton, and associates a `ServiceHostType` with a shared instance:
 
 - `InstanceType`: a `ServiceHostType`
-    - To get moving quickly, assign this to your the same type as your `JSONService` adopter
+    - To get moving quickly, set this to your `JSONService` adopter type
 - `public static func sharedInstance()`: a `JSONService.InstanceType` instance
     - An simple solution would be to return the value of `private static let _sharedInstance`
 
@@ -147,7 +147,7 @@ MyService.request(endpoint: "sprocket")
 ## Wait, seriously? A SINGLETON!
 Yes, supposedly [singletons are bad](https://www.dzombak.com/blog/2014/03/singletons.html). But `JSONService` is merely a singleton that defines its `ServiceHostType`.
 
-As such, your `JSONService` is one which updates its backend service during runtime? Let's see it in action:
+For instance, what if your `JSONService` is one which updates its backend service during runtime? Let's see it in action:
 
 ```swift
 /// A mutable `JSONService` based on the value of `host`.
