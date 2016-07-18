@@ -8,6 +8,16 @@ SomeService.request(endpoint: "foo")
 }
 ```
 
+Here's your `request`:
+```swift
+public static func request<T>(
+    endpoint endpoint: String,                      // a valid service path 
+    method: Network.RequestMethodType = default,    // defaults to `.Get`
+    parameters: [String : AnyObject]? = default,    // defaults to `nil`
+    token: Network.AuthToken = default)             // defaults to `.None` 
+-> ReactiveCocoa.SignalProducer<T, Network.NetworkError>
+```
+
 ## Introduction
 Let's define a network client that consumes responses from [JSONPlaceholder](http://jsonplaceholder.typicode.com):
 
@@ -162,6 +172,13 @@ public struct Service {
             switch Service.host { case .Custom(_, _, let path): return path }
         }
     }
+}
+
+/** Adopt `JSONService`
+ */
+extension Service: JSONService {
+    public typealias InstanceType = Service.Host
+    public static func sharedInstance() -> InstanceType { return host }
 }
 ```
 
