@@ -8,7 +8,7 @@ SomeService.request(endpoint: "foo")
 }
 ```
 
-Here's your `request`:
+The `request` function is defined as:
 ```swift
 public static func request<T>(
     endpoint endpoint: String,                      // a valid service path 
@@ -20,7 +20,6 @@ public static func request<T>(
 
 ## Introduction
 Let's define a network client that consumes responses from [JSONPlaceholder](http://jsonplaceholder.typicode.com):
-
 
 ```swift
 public struct JSONPlaceholder: JSONService, ServiceHostType {
@@ -98,9 +97,6 @@ JSONPlaceholder
 //------------------------------------------------------------------------------
 ```
 
-
-
-
 ## Framework Overview
 
 Creating a client to talk to your JSON service is done in three steps:
@@ -112,7 +108,7 @@ Creating a client to talk to your JSON service is done in three steps:
 <hr/>
 
 #### Step #1: Define a `ServiceHostType`
-The nugget of `Network` is the `ServiceHostType` protocol. It requires three static variables:
+The _secret sauce_ of `Network` is the `ServiceHostType` protocol. It requires three static variables:
 
 - `scheme`: a `String` 
     - This can be `http`, `https`, `file`, or any valid URL scheme
@@ -144,7 +140,7 @@ MyService.request(endpoint: "sprocket")
 ## Wait, seriously? A SINGLETON!
 Yes, supposedly [singletons are bad](https://www.dzombak.com/blog/2014/03/singletons.html). But `JSONService` is merely a singleton that defines its `ServiceHostType`.
 
-As such, maybe your `JSONService` is one which updates its backend service during runtime? Let's see it in action:
+As such, your `JSONService` is one which updates its backend service during runtime? Let's see it in action:
 
 ```swift
 /// A mutable `JSONService` based on the value of `host`.
@@ -174,8 +170,7 @@ public struct Service {
     }
 }
 
-/** Adopt `JSONService`
- */
+/// Adopt `JSONService`
 extension Service: JSONService {
     public typealias InstanceType = Service.Host
     public static func sharedInstance() -> InstanceType { return host }
