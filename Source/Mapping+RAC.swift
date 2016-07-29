@@ -23,6 +23,21 @@ extension SignalProducerType where Value == NSData, Error == NetworkError {
 }
 
 // MARK: -
+// MARK: Extension, Map Resource JSON
+// MARK: -
+extension SignalProducerType where Value == [String:AnyObject], Error == NetworkError {
+    func mapResourceJSON<R: ResourceJSON>() -> SignalProducer<R, Error> {
+        return attemptMap { json -> Result<R, Error> in
+            if let resource = R(json) {
+                return .Success(resource)
+            } else {
+                return .Failure(NetworkError.IncorrectDataReturned)
+            }
+        }
+    }
+}
+
+// MARK: -
 // MARK: Map JSON Response
 // MARK: -
 extension SignalProducerType where Value == (NSData, NSURLResponse), Error == NetworkError {
