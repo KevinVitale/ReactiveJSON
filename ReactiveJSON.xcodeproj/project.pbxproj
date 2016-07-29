@@ -22,6 +22,8 @@
 		0A5351481CF5E7AF00A8214B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5351461CF5E7AF00A8214B /* NetworkError.swift */; };
 		0A77F18C1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
 		0A77F18D1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
+		0A77F18F1D4BB66F0034BF5D /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
+		0A77F1901D4BB66F0034BF5D /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
 		0A78C47F1CEFA542004A9032 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */; };
 		0A78C48C1CEFA54F004A9032 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A78C48D1CEFA6E7004A9032 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
@@ -71,6 +73,7 @@
 		0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceJSONTests.swift; sourceTree = "<group>"; };
 		0A5351461CF5E7AF00A8214B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mapping+RAC.swift"; sourceTree = "<group>"; };
+		0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResource.swift; sourceTree = "<group>"; };
 		0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveJSON-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9900821D3C20AB00E31891 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */,
+				0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */,
 				0A1B2FB11D0FBBED00859A65 /* JSONService.swift */,
 				0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */,
 				0A5351461CF5E7AF00A8214B /* NetworkError.swift */,
@@ -396,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACBF03E1CAC3A5000E4A915 /* QueryItems+Ext.swift in Sources */,
+				0A77F18F1D4BB66F0034BF5D /* JSONResource.swift in Sources */,
 				0A1B2FAF1D0FBBBE00859A65 /* Singleton.swift in Sources */,
 				0ACBF0411CAC3A9A00E4A915 /* ServiceHostType.swift in Sources */,
 				0ACBF03F1CAC3A5000E4A915 /* String+Ext.swift in Sources */,
@@ -425,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A78C4941CEFA706004A9032 /* String+Ext.swift in Sources */,
+				0A77F1901D4BB66F0034BF5D /* JSONResource.swift in Sources */,
 				0A1B2FB01D0FBBBE00859A65 /* Singleton.swift in Sources */,
 				0A78C4921CEFA706004A9032 /* JSONRequest.swift in Sources */,
 				0A78C4931CEFA706004A9032 /* QueryItems+Ext.swift in Sources */,
