@@ -89,7 +89,7 @@ extension ServiceHostType {
 // MARK: Request
 // MARK: -
 extension ServiceHostType {
-    internal func request<T>(endpoint endpoint: String, method: RequestMethodType = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<T, NetworkError> {
+    func request<T>(endpoint endpoint: String, method: RequestMethodType = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<T, NetworkError> {
         return JSONRequest(Self.self, endpointPath: endpoint, method: method, parameters: parameters, token: token)
     }
 }
