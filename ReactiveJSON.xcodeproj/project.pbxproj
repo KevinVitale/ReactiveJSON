@@ -15,13 +15,13 @@
 		0A1B2FB71D0FC9E500859A65 /* ServiceHostTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */; };
 		0A1B2FBD1D105B5D00859A65 /* ResourceJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */; };
 		0A1B2FBE1D105B5D00859A65 /* ResourceJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */; };
-		0A1C17B41CAC387600BEA3B8 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1C17A91CAC387600BEA3B8 /* Network.framework */; };
+		0A1C17B41CAC387600BEA3B8 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */; };
 		0A22CC0D1D22FC5200376962 /* ResourceJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */; };
 		0A22CC0E1D22FC5200376962 /* ResourceJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */; };
 		0A5351471CF5E7AF00A8214B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5351461CF5E7AF00A8214B /* NetworkError.swift */; };
 		0A5351481CF5E7AF00A8214B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5351461CF5E7AF00A8214B /* NetworkError.swift */; };
-		0A78C47F1CEFA542004A9032 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A78C4751CEFA542004A9032 /* Network.framework */; };
-		0A78C48C1CEFA54F004A9032 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A78C47F1CEFA542004A9032 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */; };
+		0A78C48C1CEFA54F004A9032 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A78C48D1CEFA6E7004A9032 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
 		0A78C48E1CEFA6EA004A9032 /* EndpointPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0431CAC43D100E4A915 /* EndpointPathTests.swift */; };
 		0A78C48F1CEFA6EC004A9032 /* JSONRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0441CAC43D100E4A915 /* JSONRequestTests.swift */; };
@@ -30,7 +30,7 @@
 		0A78C4931CEFA706004A9032 /* QueryItemsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0391CAC3A5000E4A915 /* QueryItemsExt.swift */; };
 		0A78C4941CEFA706004A9032 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */; };
 		0A78C4951CEFA706004A9032 /* ServiceHostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0401CAC3A9A00E4A915 /* ServiceHostType.swift */; };
-		0ACBF0321CAC3A2B00E4A915 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ACBF0321CAC3A2B00E4A915 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ACBF03C1CAC3A5000E4A915 /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */; };
 		0ACBF03E1CAC3A5000E4A915 /* QueryItemsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0391CAC3A5000E4A915 /* QueryItemsExt.swift */; };
 		0ACBF03F1CAC3A5000E4A915 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */; };
@@ -64,14 +64,14 @@
 		0A1B2FAE1D0FBBBE00859A65 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		0A1B2FB11D0FBBED00859A65 /* JSONService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONService.swift; sourceTree = "<group>"; };
 		0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceJSON.swift; sourceTree = "<group>"; };
-		0A1C17A91CAC387600BEA3B8 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1C17B31CAC387600BEA3B8 /* Network-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1C17B31CAC387600BEA3B8 /* ReactiveJSON-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveJSON-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceJSONTests.swift; sourceTree = "<group>"; };
 		0A5351461CF5E7AF00A8214B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		0A78C4751CEFA542004A9032 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A78C47E1CEFA542004A9032 /* Network-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveJSON-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9900821D3C20AB00E31891 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0ACBF0311CAC3A2B00E4A915 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveJSON.h; sourceTree = "<group>"; };
 		0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
 		0ACBF0391CAC3A5000E4A915 /* QueryItemsExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemsExt.swift; sourceTree = "<group>"; };
 		0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1C17B41CAC387600BEA3B8 /* Network.framework in Frameworks */,
+				0A1C17B41CAC387600BEA3B8 /* ReactiveJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A78C47F1CEFA542004A9032 /* Network.framework in Frameworks */,
+				0A78C47F1CEFA542004A9032 /* ReactiveJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9900821D3C20AB00E31891 /* README.md */,
-				0ACBF0311CAC3A2B00E4A915 /* Network.h */,
+				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
 				0ACBF0331CAC3A3300E4A915 /* Source */,
 				0A1C17B71CAC387600BEA3B8 /* Tests */,
 				0A1C17AA1CAC387600BEA3B8 /* Products */,
@@ -132,10 +132,10 @@
 		0A1C17AA1CAC387600BEA3B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A1C17A91CAC387600BEA3B8 /* Network.framework */,
-				0A1C17B31CAC387600BEA3B8 /* Network-iOSTests.xctest */,
-				0A78C4751CEFA542004A9032 /* Network.framework */,
-				0A78C47E1CEFA542004A9032 /* Network-macOSTests.xctest */,
+				0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */,
+				0A1C17B31CAC387600BEA3B8 /* ReactiveJSON-iOSTests.xctest */,
+				0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */,
+				0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACBF0321CAC3A2B00E4A915 /* Network.h in Headers */,
+				0ACBF0321CAC3A2B00E4A915 /* ReactiveJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,16 +192,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A78C48C1CEFA54F004A9032 /* Network.h in Headers */,
+				0A78C48C1CEFA54F004A9032 /* ReactiveJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A1C17A81CAC387600BEA3B8 /* Network-iOS */ = {
+		0A1C17A81CAC387600BEA3B8 /* ReactiveJSON-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1C17BB1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "Network-iOS" */;
+			buildConfigurationList = 0A1C17BB1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOS" */;
 			buildPhases = (
 				0A1C17A41CAC387600BEA3B8 /* Sources */,
 				0A1C17A51CAC387600BEA3B8 /* Frameworks */,
@@ -212,14 +212,14 @@
 			);
 			dependencies = (
 			);
-			name = "Network-iOS";
+			name = "ReactiveJSON-iOS";
 			productName = "Network-iOS";
-			productReference = 0A1C17A91CAC387600BEA3B8 /* Network.framework */;
+			productReference = 0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0A1C17B21CAC387600BEA3B8 /* Network-iOSTests */ = {
+		0A1C17B21CAC387600BEA3B8 /* ReactiveJSON-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1C17BE1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "Network-iOSTests" */;
+			buildConfigurationList = 0A1C17BE1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOSTests" */;
 			buildPhases = (
 				0A1C17AF1CAC387600BEA3B8 /* Sources */,
 				0A1C17B01CAC387600BEA3B8 /* Frameworks */,
@@ -231,14 +231,14 @@
 			dependencies = (
 				0A1C17B61CAC387600BEA3B8 /* PBXTargetDependency */,
 			);
-			name = "Network-iOSTests";
+			name = "ReactiveJSON-iOSTests";
 			productName = "Network-iOSTests";
-			productReference = 0A1C17B31CAC387600BEA3B8 /* Network-iOSTests.xctest */;
+			productReference = 0A1C17B31CAC387600BEA3B8 /* ReactiveJSON-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0A78C4741CEFA542004A9032 /* Network-macOS */ = {
+		0A78C4741CEFA542004A9032 /* ReactiveJSON-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A78C4861CEFA542004A9032 /* Build configuration list for PBXNativeTarget "Network-macOS" */;
+			buildConfigurationList = 0A78C4861CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOS" */;
 			buildPhases = (
 				0A78C4701CEFA542004A9032 /* Sources */,
 				0A78C4711CEFA542004A9032 /* Frameworks */,
@@ -249,14 +249,14 @@
 			);
 			dependencies = (
 			);
-			name = "Network-macOS";
+			name = "ReactiveJSON-macOS";
 			productName = "Network-macOS";
-			productReference = 0A78C4751CEFA542004A9032 /* Network.framework */;
+			productReference = 0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0A78C47D1CEFA542004A9032 /* Network-macOSTests */ = {
+		0A78C47D1CEFA542004A9032 /* ReactiveJSON-macOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A78C4891CEFA542004A9032 /* Build configuration list for PBXNativeTarget "Network-macOSTests" */;
+			buildConfigurationList = 0A78C4891CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOSTests" */;
 			buildPhases = (
 				0A78C47A1CEFA542004A9032 /* Sources */,
 				0A78C47B1CEFA542004A9032 /* Frameworks */,
@@ -268,9 +268,9 @@
 			dependencies = (
 				0A78C4811CEFA542004A9032 /* PBXTargetDependency */,
 			);
-			name = "Network-macOSTests";
+			name = "ReactiveJSON-macOSTests";
 			productName = "Network-macOSTests";
-			productReference = 0A78C47E1CEFA542004A9032 /* Network-macOSTests.xctest */;
+			productReference = 0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0A1C17A11CAC36C700BEA3B8 /* Build configuration list for PBXProject "Network" */;
+			buildConfigurationList = 0A1C17A11CAC36C700BEA3B8 /* Build configuration list for PBXProject "ReactiveJSON" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -308,10 +308,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A1C17A81CAC387600BEA3B8 /* Network-iOS */,
-				0A1C17B21CAC387600BEA3B8 /* Network-iOSTests */,
-				0A78C4741CEFA542004A9032 /* Network-macOS */,
-				0A78C47D1CEFA542004A9032 /* Network-macOSTests */,
+				0A1C17A81CAC387600BEA3B8 /* ReactiveJSON-iOS */,
+				0A1C17B21CAC387600BEA3B8 /* ReactiveJSON-iOSTests */,
+				0A78C4741CEFA542004A9032 /* ReactiveJSON-macOS */,
+				0A78C47D1CEFA542004A9032 /* ReactiveJSON-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,12 +448,12 @@
 /* Begin PBXTargetDependency section */
 		0A1C17B61CAC387600BEA3B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A1C17A81CAC387600BEA3B8 /* Network-iOS */;
+			target = 0A1C17A81CAC387600BEA3B8 /* ReactiveJSON-iOS */;
 			targetProxy = 0A1C17B51CAC387600BEA3B8 /* PBXContainerItemProxy */;
 		};
 		0A78C4811CEFA542004A9032 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A78C4741CEFA542004A9032 /* Network-macOS */;
+			target = 0A78C4741CEFA542004A9032 /* ReactiveJSON-macOS */;
 			targetProxy = 0A78C4801CEFA542004A9032 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -521,7 +521,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOS";
-				PRODUCT_NAME = Network;
+				PRODUCT_NAME = ReactiveJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -575,7 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOS";
-				PRODUCT_NAME = Network;
+				PRODUCT_NAME = ReactiveJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 2.3;
@@ -630,7 +630,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ReactiveJSON-iOSTests";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -674,7 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ReactiveJSON-iOSTests";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
@@ -733,7 +733,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOS";
-				PRODUCT_NAME = Network;
+				PRODUCT_NAME = ReactiveJSON;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -788,7 +788,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOS";
-				PRODUCT_NAME = Network;
+				PRODUCT_NAME = ReactiveJSON;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 2.3;
@@ -842,7 +842,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ReactiveJSON-iOSTests";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -886,7 +886,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ReactiveJSON-iOSTests";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -894,7 +894,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A1C17A11CAC36C700BEA3B8 /* Build configuration list for PBXProject "Network" */ = {
+		0A1C17A11CAC36C700BEA3B8 /* Build configuration list for PBXProject "ReactiveJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A1C17A21CAC36C700BEA3B8 /* Debug */,
@@ -903,7 +903,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A1C17BB1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "Network-iOS" */ = {
+		0A1C17BB1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A1C17BC1CAC387600BEA3B8 /* Debug */,
@@ -912,7 +912,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A1C17BE1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "Network-iOSTests" */ = {
+		0A1C17BE1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A1C17BF1CAC387600BEA3B8 /* Debug */,
@@ -921,7 +921,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A78C4861CEFA542004A9032 /* Build configuration list for PBXNativeTarget "Network-macOS" */ = {
+		0A78C4861CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A78C4871CEFA542004A9032 /* Debug */,
@@ -930,7 +930,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A78C4891CEFA542004A9032 /* Build configuration list for PBXNativeTarget "Network-macOSTests" */ = {
+		0A78C4891CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A78C48A1CEFA542004A9032 /* Debug */,

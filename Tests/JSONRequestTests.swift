@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-import Network
+import ReactiveJSON
 import Result
 import ReactiveCocoa
 

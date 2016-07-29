@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-@testable import Network
+@testable import ReactiveJSON
 
 class QueryParametersTests: QuickSpec {
     override func spec() {

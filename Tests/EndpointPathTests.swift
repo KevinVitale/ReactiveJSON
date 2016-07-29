@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-import Network
+import ReactiveJSON
 
 class EndpointPathTests: QuickSpec {
     private enum Endpoint: String {
