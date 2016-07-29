@@ -73,6 +73,21 @@ extension Fixture {
 
         request.start(observer)
     }
+
+    public static func request<R: Resourceable>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (EndpointResource<R>? -> Void)? = nil) throws {
+        try set(file: name)
+
+        let request: SignalProducer<EndpointResource<R>?, NetworkError> = Fixture.request(endpoint: empty)
+        let observer = Observer<EndpointResource<R>?, NetworkError>(
+            failed: failed,
+            completed: { File.host = ""; completed?() },
+            interrupted:
+            interrupted,
+            next: next
+        )
+
+        request.start(observer)
+    }
 }
 
 // MARK: -

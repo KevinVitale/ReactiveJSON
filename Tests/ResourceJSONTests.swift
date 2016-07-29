@@ -7,11 +7,14 @@ class ResourceJSONTests: QuickSpec {
     override func spec() {
         describe("resource json") {
             it("handles conformance on assignment") {
-                var resource = JSONResource()
+                var resource: EndpointResource<Resource<Int>>? = nil
                 try! Fixture.request(fixture: "users") { resource = $0 }
 
-                expect { resource.json["username"] as? String
-                    }.toEventually( equal("Moriah.Stanton") )
+                expect { resource?.first?["username"] as? String
+                    }.toEventually( equal("Bret") )
+
+                expect { resource?.first?.id
+                    }.toEventually( equal(1) )
             }
 
             it("handles conformance on bindings") {
