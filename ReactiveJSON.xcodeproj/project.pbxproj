@@ -24,6 +24,8 @@
 		0A77F18D1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
 		0A77F18F1D4BB66F0034BF5D /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
 		0A77F1901D4BB66F0034BF5D /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
+		0A77F1921D4BBF9B0034BF5D /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A77F1911D4BBF9B0034BF5D /* users.json */; };
+		0A77F1931D4BBF9B0034BF5D /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A77F1911D4BBF9B0034BF5D /* users.json */; };
 		0A78C47F1CEFA542004A9032 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */; };
 		0A78C48C1CEFA54F004A9032 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A78C48D1CEFA6E7004A9032 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
@@ -43,8 +45,6 @@
 		0ACBF0491CAC43D100E4A915 /* JSONRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0441CAC43D100E4A915 /* JSONRequestTests.swift */; };
 		0ACBF04A1CAC43D100E4A915 /* QueryParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */; };
 		0ACBF04F1CAC47FF00E4A915 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
-		0AF594921D3A722300C1F11B /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AF594911D3A722300C1F11B /* user.json */; };
-		0AF594931D3A722300C1F11B /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AF594911D3A722300C1F11B /* user.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +74,7 @@
 		0A5351461CF5E7AF00A8214B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mapping+RAC.swift"; sourceTree = "<group>"; };
 		0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResource.swift; sourceTree = "<group>"; };
+		0A77F1911D4BBF9B0034BF5D /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveJSON-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9900821D3C20AB00E31891 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParametersTests.swift; sourceTree = "<group>"; };
 		0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHostTypeTests.swift; sourceTree = "<group>"; };
 		0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
-		0AF594911D3A722300C1F11B /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */,
-				0AF594911D3A722300C1F11B /* user.json */,
+				0A77F1911D4BBF9B0034BF5D /* users.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF594921D3A722300C1F11B /* user.json in Resources */,
+				0A77F1921D4BBF9B0034BF5D /* users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF594931D3A722300C1F11B /* user.json in Resources */,
+				0A77F1931D4BBF9B0034BF5D /* users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

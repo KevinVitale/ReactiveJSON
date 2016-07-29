@@ -8,21 +8,21 @@ class ResourceJSONTests: QuickSpec {
         describe("resource json") {
             it("handles conformance on assignment") {
                 var resource = JSONResource()
-                try! Fixture.request(fixture: "user") { resource = $0 }
+                try! Fixture.request(fixture: "users") { resource = $0 }
 
                 expect { resource.json["username"] as? String
-                    }.toEventually( equal("kevinvitale") )
+                    }.toEventually( equal("Moriah.Stanton") )
             }
 
             it("handles conformance on bindings") {
-                try! Fixture.set(file: "user")
+                try! Fixture.set(file: "users")
 
                 let resource = MutableProperty(JSONResource())
                 resource <~ Fixture.request(endpoint: empty)
                     .ignoreError()
 
                 expect{ resource.value.json["username"] as? String
-                    }.toEventually( equal("kevinvitale") )
+                    }.toEventually( equal("Moriah.Stanton") )
             }
         }
     }
