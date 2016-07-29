@@ -24,8 +24,7 @@ extension JSONService {
      - returns: A signal that, when started, sends `T` values parsed from response, or an error.
      */
     public static func request<T>(endpoint endpoint: String, method: RequestMethodType = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<T, NetworkError> {
-        return sharedInstance()
-            .request(endpoint: endpoint, method: method, parameters: parameters, token: token)
+        return sharedInstance().request(endpoint: endpoint, method: method, parameters: parameters, token: token)
     }
     
     /**
@@ -38,7 +37,6 @@ extension JSONService {
      - returns: A signal that, when started, sends `R` values parsed from response, or an error.
      */
     public static func request<R: ResourceJSON>(endpoint endpoint: String, method: RequestMethodType = .Get, parameters: [String : AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<R, NetworkError> {
-        return request(endpoint: endpoint, method: method, parameters: parameters, token: token)
-            .mapResourceJSON()
+        return request(endpoint: endpoint, method: method, parameters: parameters, token: token).mapResourceJSON()
     }
 }

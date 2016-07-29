@@ -123,6 +123,8 @@ SWIFT_CLASS("_TtC13ReactiveCocoa11CocoaAction")
 @property (nonatomic, readonly) BOOL executing;
 
 /// Attempts to execute the underlying action with the given input, subject to the behavior described by the initializer that was used.
+///
+/// \param input A value for the action passed during initialization.
 - (IBAction)execute:(id _Nullable)input;
 + (BOOL)automaticallyNotifiesObserversForKey:(NSString * _Nonnull)key;
 @end
@@ -142,7 +144,14 @@ SWIFT_CLASS("_TtC13ReactiveCocoa15DynamicProperty")
 /// The current value of the property, as read and written using Key-Value Coding.
 @property (nonatomic, strong, getter=rac_value, setter=setRac_value:) id _Nullable value;
 
-/// Initializes a property that will observe and set the given key path of the given object. object must support weak references!
+/// Initializes a property that will observe and set the given key path of the given object.\Important 
+///
+/// <code>object
+/// </code> must support weak references!
+///
+/// \param object An object to be observed.
+///
+/// \param keyPath Key path to observe on the object.
 - (nonnull instancetype)initWithObject:(NSObject * _Nullable)object keyPath:(NSString * _Nonnull)keyPath OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -165,6 +174,8 @@ SWIFT_CLASS("_TtC13ReactiveCocoa15DynamicProperty")
 @class NSDate;
 
 @interface RACScheduler (SWIFT_EXTENSION(ReactiveCocoa))
+
+/// The current date, as determined by this scheduler.
 @property (nonatomic, readonly, strong) NSDate * _Nonnull currentDate;
 @end
 

@@ -1,6 +1,7 @@
 import Quick
 import Nimble
 import Network
+import Result
 import ReactiveCocoa
 
 // TODO: Delete Me
@@ -32,8 +33,8 @@ class JSONRequestTests: QuickSpec {
                 var colors: [[String:AnyObject]] = []
                 GW2API.request(endpoint: "colors", parameters: ["id": 4])
                     .collect()
-                    .startWithNext {
-                        colors = $0
+                    .startWithResult {
+                        colors = $0.value!
                 }
                 expect(colors.count).toEventually(equal(1), timeout: 5)
             }
@@ -42,8 +43,8 @@ class JSONRequestTests: QuickSpec {
                 var colors = []
                 GW2API.request(endpoint: "colors")
                     .collect()
-                    .startWithNext { (colorIDs: [Int]) in
-                        colors = colorIDs
+                    .startWithResult { (result: Result<[Int], NetworkError>) in
+                        colors = result.value!
                 }
                 expect(colors.count).toEventually(equal(501), timeout: 5)
             }
