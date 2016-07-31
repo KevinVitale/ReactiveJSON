@@ -77,7 +77,11 @@ extension Fixture {
     public static func request<R: Resourceable>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (EndpointResource<R>? -> Void)? = nil) throws {
         try set(file: name)
 
-        let request: SignalProducer<EndpointResource<R>?, NetworkError> = Fixture.request(endpoint: empty)
+        let request: SignalProducer<EndpointResource<R>?, NetworkError> = Fixture
+            .request(endpoint: empty)
+            .map { (resources: [[String:AnyObject]]) in
+                EndpointResource<R>(resources)
+        }
         let observer = Observer<EndpointResource<R>?, NetworkError>(
             failed: failed,
             completed: { File.host = ""; completed?() },
@@ -88,6 +92,32 @@ extension Fixture {
 
         request.start(observer)
     }
+}
+
+public struct EndpointResource<R: Resourceable where R.Attributes == JSONResource>: EndpointResourceable {
+    //--------------------------------------------------------------------------
+    public typealias Index = Int
+    public typealias Element = R
+    public typealias Generator = IndexingGenerator<[Element]>
+    //--------------------------------------------------------------------------
+    private let data: [Element]
+    //--------------------------------------------------------------------------
+    public var startIndex: Index { return data.startIndex }
+    public var endIndex: Index { return data.endIndex }
+    public func generate() -> IndexingGenerator<[Element]> {
+        return data.generate()
+    }
+    public subscript (position: Index) -> Generator.Element {
+        return data[position]
+    }
+    //--------------------------------------------------------------------------
+    public init<S : SequenceType where S.Generator.Element == [String : AnyObject]>(_ s: S) {
+        data = s.map(R.init).flatMap { $0 }
+    }
+    public init(arrayLiteral elements: Element...) {
+        data = elements
+    }
+    //--------------------------------------------------------------------------
 }
 
 // MARK: -

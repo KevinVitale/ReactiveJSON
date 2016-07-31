@@ -4,8 +4,8 @@ public protocol Resourceable: ResourceJSON, Identifiable {
 }
 
 extension Resourceable {
-    public static func parse(json: Any?) -> EndpointResource<Self>? {
-        return EndpointResource(json)
+    public static func parse<E: EndpointResourceable>(json: Any?) -> E? {
+        return nil
     }
 }
 

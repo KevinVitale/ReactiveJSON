@@ -39,17 +39,4 @@ extension JSONService {
     public static func request<R: ResourceJSON>(endpoint endpoint: String, method: RequestMethodType = .Get, parameters: [String : AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<R, NetworkError> {
         return request(endpoint: endpoint, method: method, parameters: parameters, token: token).mapResourceJSON()
     }
-
-    /**
-     Performs a JSON request, attempting to map the result to an instance of `EndpointResource<R>`.
-
-     - parameter endpoint: The endpoint string.
-     - parameter method: How the request should be made. Defaults to `GET`.
-     - parameter parameters: Optional request parameters.
-     
-     - returns: A producer that, when started, sends an optional `EndpointResource` of type `R`, or an error.
-     */
-    public static func request<R: Resourceable>(endpoint endpoint: String, method: RequestMethodType = .Get, parameters: [String : AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<EndpointResource<R>?, NetworkError> {
-        return request(endpoint: endpoint, method: method, parameters: parameters, token: token).map(R.parse)
-    }
 }

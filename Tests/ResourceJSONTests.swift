@@ -7,7 +7,7 @@ class ResourceJSONTests: QuickSpec {
     override func spec() {
         describe("resource json") {
             it("handles conformance on assignment") {
-                var resource: EndpointResource<Resource<Int>>? = nil
+                var resource: EndpointResource<Resource<Int>>! = []
                 try! Fixture.request(fixture: "users") { resource = $0 }
 
                 expect { resource?.first?["username"] as? String
