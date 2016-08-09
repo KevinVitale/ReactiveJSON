@@ -1,4 +1,4 @@
 @import Foundation;
 
-FOUNDATION_EXPORT double Network_VersionNumber;
-FOUNDATION_EXPORT const unsigned char Network_VersionString[];
+FOUNDATION_EXPORT double ReactiveJSON_VersionNumber;
+FOUNDATION_EXPORT const unsigned char ReactiveJSON_VersionString[];
