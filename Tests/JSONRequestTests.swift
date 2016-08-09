@@ -5,12 +5,10 @@ import Result
 import ReactiveCocoa
 
 // TODO: Delete Me
-struct GW2API: JSONService, ServiceHostType {
-    static let _sharedInstance = GW2API()
-    typealias InstanceType = GW2API
-    static func sharedInstance() -> InstanceType {
-        return _sharedInstance
-    }
+struct GW2API: Singleton, ServiceHost {
+    private(set) static var shared = Instance()
+    typealias Instance = GW2API
+
     static var scheme: String { return "https" }
     static var host: String { return "api.guildwars2.com" }
     static var path: String? { return "v2" }
@@ -30,23 +28,21 @@ class JSONRequestTests: QuickSpec {
             }
 
             it("handles request as 'dictionary'") {
-                var colors: [[String:AnyObject]] = []
+                var colors: [String:AnyObject] = [:]
                 GW2API.request(endpoint: "colors", parameters: ["id": 4])
-                    .collect()
                     .startWithResult {
                         colors = $0.value!
                 }
-                expect(colors.count).toEventually(equal(1), timeout: 5)
+                expect(colors["name"] as? String).toEventually(equal("Gray"), timeout: 5)
             }
 
             it("handles request as 'int' collection") {
                 var colors = []
                 GW2API.request(endpoint: "colors")
-                    .collect()
                     .startWithResult { (result: Result<[Int], NetworkError>) in
                         colors = result.value!
                 }
-                expect(colors.count).toEventually(equal(501), timeout: 5)
+                expect(colors.count).toEventually(equal(507), timeout: 5)
             }
         }
     }

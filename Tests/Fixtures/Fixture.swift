@@ -8,28 +8,17 @@ public let empty = ""
 /**
  A `JSONService` which loads responses from a fixture file in the test bundle.
  */
-public struct Fixture {
-    private static var file = File()
-    public struct File: ServiceHostType {
+public struct Fixture: Singleton {
+    public typealias Instance = Fixture.File
+    public private(set) static var shared = Instance()
+
+    public struct File: ServiceHost {
         public static var scheme: String = "file"
         public static var host: String = ""
         public static var path: String? = nil
     }
 }
 
-// MARK: -
-// MARK: Extension, JSON Service
-// MARK: -
-extension Fixture: JSONService {
-    public typealias InstanceType = Fixture.File
-    public static func sharedInstance() -> InstanceType {
-        return file
-    }
-}
-
-// MARK: -
-// MARK:
-// MARK: -
 public enum FixtureError: ErrorType, CustomStringConvertible {
     case FileNotFound(String)
 
@@ -59,7 +48,7 @@ extension Fixture {
         File.host = path
     }
 
-    public static func request<R: ResourceJSON>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (R -> Void)? = nil) throws {
+    public static func request<R: JSONConvertible>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (R -> Void)? = nil) throws {
         try set(file: name)
 
         let request: SignalProducer<R, NetworkError> = Fixture.request(endpoint: empty)
@@ -74,7 +63,7 @@ extension Fixture {
         request.start(observer)
     }
 
-    public static func request<R: Resourceable>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (EndpointResource<R>? -> Void)? = nil) throws {
+    public static func request<R: Resource>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (EndpointResource<R>? -> Void)? = nil) throws {
         try set(file: name)
 
         let request: SignalProducer<EndpointResource<R>?, NetworkError> = Fixture
@@ -94,7 +83,13 @@ extension Fixture {
     }
 }
 
-public struct EndpointResource<R: Resourceable where R.Attributes == JSONResource>: EndpointResourceable {
+// MARK: - EndpointResource -
+//------------------------------------------------------------------------------
+public protocol EndpointResourceable: CollectionType, ArrayLiteralConvertible {
+    init<S: SequenceType where S.Generator.Element == [String:AnyObject]>(_ s: S)
+}
+
+public struct EndpointResource<R: Resource where R.Attributes == JSONResource>: EndpointResourceable {
     //--------------------------------------------------------------------------
     public typealias Index = Int
     public typealias Element = R

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -32,25 +32,21 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0A1C17B21CAC387600BEA3B8"
+               BuildableName = "ReactiveJSON-iOSTests.xctest"
+               BlueprintName = "ReactiveJSON-iOSTests"
+               ReferencedContainer = "container:ReactiveJSON.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A78C47D1CEFA542004A9032"
                BuildableName = "ReactiveJSON-iOSTests.xctest"
                BlueprintName = "ReactiveJSON-macOSTests"
                ReferencedContainer = "container:ReactiveJSON.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "EndpointPathTests">
-               </Test>
-               <Test
-                  Identifier = "JSONRequestTests">
-               </Test>
-               <Test
-                  Identifier = "QueryParametersTests">
-               </Test>
-               <Test
-                  Identifier = "ServiceHostTypeTests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

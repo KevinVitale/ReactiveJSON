@@ -26,7 +26,7 @@ class ServiceHostTypeTests: QuickSpec {
 
             it("generates non-nil URL") {
                 let endpointPath = "colors"
-                let url = GW2API.URLWith(endpointPath)
+                let url = GW2API.URLString(with: endpointPath)
                 expect(url).toNot(beNil())
             }
 
@@ -46,7 +46,7 @@ class ServiceHostTypeTests: QuickSpec {
             it("generates URL request from endpoint path, with 'POST' method") {
                 let endpointPath = "colors"
                 let request = GW2API.URLRequest(endpointPath, method: .Post)
-                expect(request?.HTTPMethod).to(equal(RequestMethodType.Post.rawValue))
+                expect(request?.HTTPMethod).to(equal(RequestMethod.Post.rawValue))
             }
         }
     }
