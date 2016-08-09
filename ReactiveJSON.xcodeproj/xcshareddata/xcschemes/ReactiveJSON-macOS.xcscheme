@@ -32,16 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A1C17B21CAC387600BEA3B8"
-               BuildableName = "ReactiveJSON-iOSTests.xctest"
-               BlueprintName = "ReactiveJSON-iOSTests"
-               ReferencedContainer = "container:ReactiveJSON.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A78C47D1CEFA542004A9032"
                BuildableName = "ReactiveJSON-iOSTests.xctest"
                BlueprintName = "ReactiveJSON-macOSTests"
