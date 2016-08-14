@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0AECB84A1D5A79A7003C0A70"
-               BuildableName = "ReactiveJSON-tvOS.framework"
+               BuildableName = "ReactiveJSON.framework"
                BlueprintName = "ReactiveJSON-tvOS"
                ReferencedContainer = "container:ReactiveJSON.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0AECB84A1D5A79A7003C0A70"
-            BuildableName = "ReactiveJSON-tvOS.framework"
+            BuildableName = "ReactiveJSON.framework"
             BlueprintName = "ReactiveJSON-tvOS"
             ReferencedContainer = "container:ReactiveJSON.xcodeproj">
          </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0AECB84A1D5A79A7003C0A70"
-            BuildableName = "ReactiveJSON-tvOS.framework"
+            BuildableName = "ReactiveJSON.framework"
             BlueprintName = "ReactiveJSON-tvOS"
             ReferencedContainer = "container:ReactiveJSON.xcodeproj">
          </BuildableReference>
@@ -73,7 +73,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0AECB84A1D5A79A7003C0A70"
-            BuildableName = "ReactiveJSON-tvOS.framework"
+            BuildableName = "ReactiveJSON.framework"
             BlueprintName = "ReactiveJSON-tvOS"
             ReferencedContainer = "container:ReactiveJSON.xcodeproj">
          </BuildableReference>
