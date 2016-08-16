@@ -16,7 +16,7 @@ After a tiny bit of setup, requests look like this:
 MyJSONService
     .request(endpoint: "foo")
     .startWithResult {
-        // `value` is infered to be `Any`
+        // `value` is inferred to be `Any`
         print($0.value)
     }
 //------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ struct GW2API: Singleton, ServiceHost {
 }
 ```
 
-A `Singleton` that is also a `ServiceHost` can make requests:
+Any `ServiceHost` can make a request. Therefore, a `Singleton` that is also a `ServiceHost` can, as well:
 ```swift
 // Prints the name of all dyes returned by the "colors" endpoint
 GW2API.request(endpoint: "colors", parameters: ["ids":"all"])
