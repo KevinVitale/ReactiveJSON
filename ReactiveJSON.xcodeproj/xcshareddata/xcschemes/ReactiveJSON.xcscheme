@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A1C17A81CAC387600BEA3B8"
+               BlueprintIdentifier = "0ADB4BB11D637F3C008CF654"
                BuildableName = "ReactiveJSON.framework"
-               BlueprintName = "ReactiveJSON-iOS"
+               BlueprintName = "ReactiveJSON"
                ReferencedContainer = "container:ReactiveJSON.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A1C17B21CAC387600BEA3B8"
-               BuildableName = "ReactiveJSON-iOSTests.xctest"
-               BlueprintName = "ReactiveJSON-iOSTests"
+               BlueprintIdentifier = "0ADB4BBE1D638117008CF654"
+               BuildableName = "ReactiveJSONTests.xctest"
+               BlueprintName = "ReactiveJSONTests"
                ReferencedContainer = "container:ReactiveJSON.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A1C17A81CAC387600BEA3B8"
+            BlueprintIdentifier = "0ADB4BB11D637F3C008CF654"
             BuildableName = "ReactiveJSON.framework"
-            BlueprintName = "ReactiveJSON-iOS"
+            BlueprintName = "ReactiveJSON"
             ReferencedContainer = "container:ReactiveJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A1C17A81CAC387600BEA3B8"
+            BlueprintIdentifier = "0ADB4BB11D637F3C008CF654"
             BuildableName = "ReactiveJSON.framework"
-            BlueprintName = "ReactiveJSON-iOS"
+            BlueprintName = "ReactiveJSON"
             ReferencedContainer = "container:ReactiveJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A1C17A81CAC387600BEA3B8"
+            BlueprintIdentifier = "0ADB4BB11D637F3C008CF654"
             BuildableName = "ReactiveJSON.framework"
-            BlueprintName = "ReactiveJSON-iOS"
+            BlueprintName = "ReactiveJSON"
             ReferencedContainer = "container:ReactiveJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
