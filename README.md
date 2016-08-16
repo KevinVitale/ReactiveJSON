@@ -67,6 +67,9 @@ GW2API.request(endpoint: "colors", parameters: ["ids":"all"])
 > _"One of my favorite aspects of Swift: Protocols allow you describe truths about types. Generic code can build on top of these truths."_
 
 The `Singleton` protocol requires its `Instance` alias be a `ServiceHost`. Without the need to overload any `request` functions, we can create a client that loads its responses from a fixture file. The result might look something like this:
+
+> _Note: For a complete example of this concept, see [`Fixture.swift`](https://github.com/KevinVitale/ReactiveJSON/blob/master/Tests/Fixtures/Fixture.swift)_
+
 ```swift
 class ServiceHostTests: QuickSpec {
     override func spec() {
