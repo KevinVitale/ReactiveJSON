@@ -8,7 +8,9 @@ class ResourceJSONTests: QuickSpec {
         describe("resource json") {
             it("handles conformance on assignment") {
                 var resource: EndpointResource<Entity<Int>>! = []
-                try! Fixture.request(fixture: "users") { resource = $0 }
+                try! Fixture.request(fixture: "users") { (response: [[String:AnyObject]]) in
+                    resource = EndpointResource(response)
+                }
 
                 expect { resource?.first?["username"] as? String
                     }.toEventually( equal("Bret") )

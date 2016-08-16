@@ -5,9 +5,6 @@ import ReactiveCocoa
 ///   generating invalid file fixture paths.
 public let empty = ""
 
-/**
- A `JSONService` which loads responses from a fixture file in the test bundle.
- */
 public struct Fixture: Singleton {
     public typealias Instance = Fixture.File
     public private(set) static var shared = Instance()
@@ -34,9 +31,6 @@ public enum FixtureError: ErrorType, CustomStringConvertible {
     }
 }
 
-// MARK: -
-// MARK: Extension, Set / Load Fixture File
-// MARK: -
 extension Fixture {
     public static func set(file name: String) throws {
         guard let url = NSBundle.testOrMainBundle().URLForResource(name, withExtension: "json")
@@ -48,30 +42,11 @@ extension Fixture {
         File.host = path
     }
 
-    public static func request<R: JSONConvertible>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (R -> Void)? = nil) throws {
+    public static func request<T>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (T -> Void)? = nil) throws {
         try set(file: name)
 
-        let request: SignalProducer<R, NetworkError> = Fixture.request(endpoint: empty)
-        let observer = Observer<R, NetworkError>(
-            failed: failed,
-            completed: { File.host = ""; completed?() },
-            interrupted:
-            interrupted,
-            next: next
-        )
-
-        request.start(observer)
-    }
-
-    public static func request<R: Resource>(fixture name: String, failed: (NetworkError -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil, next: (EndpointResource<R>? -> Void)? = nil) throws {
-        try set(file: name)
-
-        let request: SignalProducer<EndpointResource<R>?, NetworkError> = Fixture
-            .request(endpoint: empty)
-            .map { (resources: [[String:AnyObject]]) in
-                EndpointResource<R>(resources)
-        }
-        let observer = Observer<EndpointResource<R>?, NetworkError>(
+        let request: SignalProducer<T, NetworkError> = Fixture.request(endpoint: empty)
+        let observer = Observer<T, NetworkError>(
             failed: failed,
             completed: { File.host = ""; completed?() },
             interrupted:
