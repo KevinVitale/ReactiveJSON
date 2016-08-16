@@ -7,129 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A1B2FAF1D0FBBBE00859A65 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FAE1D0FBBBE00859A65 /* Singleton.swift */; };
-		0A1B2FB01D0FBBBE00859A65 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FAE1D0FBBBE00859A65 /* Singleton.swift */; };
-		0A1B2FB21D0FBBED00859A65 /* JSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FB11D0FBBED00859A65 /* JSONService.swift */; };
-		0A1B2FB31D0FBBED00859A65 /* JSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FB11D0FBBED00859A65 /* JSONService.swift */; };
-		0A1B2FB61D0FC9E400859A65 /* ServiceHostTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */; };
-		0A1B2FB71D0FC9E500859A65 /* ServiceHostTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */; };
-		0A1B2FBD1D105B5D00859A65 /* ResourceJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */; };
-		0A1B2FBE1D105B5D00859A65 /* ResourceJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */; };
-		0A1C17B41CAC387600BEA3B8 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */; };
-		0A22CC0D1D22FC5200376962 /* ResourceJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */; };
-		0A22CC0E1D22FC5200376962 /* ResourceJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */; };
-		0A5351471CF5E7AF00A8214B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5351461CF5E7AF00A8214B /* NetworkError.swift */; };
-		0A5351481CF5E7AF00A8214B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5351461CF5E7AF00A8214B /* NetworkError.swift */; };
-		0A77F18C1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
-		0A77F18D1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
-		0A77F18F1D4BB66F0034BF5D /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
-		0A77F1901D4BB66F0034BF5D /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
-		0A77F1921D4BBF9B0034BF5D /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A77F1911D4BBF9B0034BF5D /* users.json */; };
-		0A77F1931D4BBF9B0034BF5D /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A77F1911D4BBF9B0034BF5D /* users.json */; };
-		0A77F1951D4BC2DF0034BF5D /* Resourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F1941D4BC2DF0034BF5D /* Resourceable.swift */; };
-		0A77F1961D4BC2DF0034BF5D /* Resourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F1941D4BC2DF0034BF5D /* Resourceable.swift */; };
-		0A77F1981D4BC2F70034BF5D /* EndpointResourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F1971D4BC2F70034BF5D /* EndpointResourceable.swift */; };
-		0A77F1991D4BC2F70034BF5D /* EndpointResourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F1971D4BC2F70034BF5D /* EndpointResourceable.swift */; };
-		0A77F19B1D4BC3040034BF5D /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F19A1D4BC3040034BF5D /* Identifiable.swift */; };
-		0A77F19C1D4BC3040034BF5D /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F19A1D4BC3040034BF5D /* Identifiable.swift */; };
-		0A77F19E1D4BC31C0034BF5D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F19D1D4BC31C0034BF5D /* Resource.swift */; };
-		0A77F19F1D4BC31C0034BF5D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F19D1D4BC31C0034BF5D /* Resource.swift */; };
-		0A78C47F1CEFA542004A9032 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */; };
-		0A78C48C1CEFA54F004A9032 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A78C48D1CEFA6E7004A9032 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
-		0A78C48E1CEFA6EA004A9032 /* EndpointPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0431CAC43D100E4A915 /* EndpointPathTests.swift */; };
-		0A78C48F1CEFA6EC004A9032 /* JSONRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0441CAC43D100E4A915 /* JSONRequestTests.swift */; };
-		0A78C4901CEFA6EF004A9032 /* QueryParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */; };
-		0A78C4921CEFA706004A9032 /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */; };
-		0A78C4931CEFA706004A9032 /* QueryItems+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0391CAC3A5000E4A915 /* QueryItems+Ext.swift */; };
-		0A78C4941CEFA706004A9032 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */; };
-		0A78C4951CEFA706004A9032 /* ServiceHostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0401CAC3A9A00E4A915 /* ServiceHostType.swift */; };
-		0ACBF0321CAC3A2B00E4A915 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0ACBF03C1CAC3A5000E4A915 /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */; };
-		0ACBF03E1CAC3A5000E4A915 /* QueryItems+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0391CAC3A5000E4A915 /* QueryItems+Ext.swift */; };
-		0ACBF03F1CAC3A5000E4A915 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */; };
-		0ACBF0411CAC3A9A00E4A915 /* ServiceHostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0401CAC3A9A00E4A915 /* ServiceHostType.swift */; };
-		0ACBF0481CAC43D100E4A915 /* EndpointPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0431CAC43D100E4A915 /* EndpointPathTests.swift */; };
-		0ACBF0491CAC43D100E4A915 /* JSONRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0441CAC43D100E4A915 /* JSONRequestTests.swift */; };
-		0ACBF04A1CAC43D100E4A915 /* QueryParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */; };
-		0ACBF04F1CAC47FF00E4A915 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
+		0ADB4BBA1D637F61008CF654 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ADB4BC41D638117008CF654 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */; };
+		0ADB4BCA1D63816E008CF654 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
+		0ADB4BCB1D638171008CF654 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A77F1911D4BBF9B0034BF5D /* users.json */; };
+		0ADB4BCC1D638175008CF654 /* EndpointPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0431CAC43D100E4A915 /* EndpointPathTests.swift */; };
+		0ADB4BCD1D638175008CF654 /* JSONRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0441CAC43D100E4A915 /* JSONRequestTests.swift */; };
+		0ADB4BCE1D638175008CF654 /* QueryParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */; };
+		0ADB4BCF1D638175008CF654 /* ResourceJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */; };
+		0ADB4BD01D638175008CF654 /* ServiceHostTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */; };
+		0ADB4BD31D63860F008CF654 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB8291D5A3145003C0A70 /* Enums.swift */; };
+		0ADB4BD41D63860F008CF654 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB82C1D5A3337003C0A70 /* Extensions.swift */; };
+		0ADB4BD51D63860F008CF654 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB8261D5A2778003C0A70 /* Protocols.swift */; };
+		0ADB4BD61D63860F008CF654 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F19D1D4BC31C0034BF5D /* Entity.swift */; };
+		0ADB4BD71D63860F008CF654 /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
+		0ADB4BD81D63860F008CF654 /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
+		0ADB4BD91D63860F008CF654 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5351461CF5E7AF00A8214B /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A1C17B51CAC387600BEA3B8 /* PBXContainerItemProxy */ = {
+		0ADB4BC51D638117008CF654 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A1C179E1CAC36C700BEA3B8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A1C17A81CAC387600BEA3B8;
-			remoteInfo = "Network-iOS";
-		};
-		0A78C4801CEFA542004A9032 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A1C179E1CAC36C700BEA3B8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A78C4741CEFA542004A9032;
-			remoteInfo = "Network-macOS";
+			remoteGlobalIDString = 0ADB4BB11D637F3C008CF654;
+			remoteInfo = ReactiveJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A1B2FAE1D0FBBBE00859A65 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		0A1B2FB11D0FBBED00859A65 /* JSONService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONService.swift; sourceTree = "<group>"; };
-		0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceJSON.swift; sourceTree = "<group>"; };
-		0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1C17B31CAC387600BEA3B8 /* ReactiveJSON-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveJSON-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceJSONTests.swift; sourceTree = "<group>"; };
 		0A5351461CF5E7AF00A8214B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mapping+RAC.swift"; sourceTree = "<group>"; };
 		0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResource.swift; sourceTree = "<group>"; };
 		0A77F1911D4BBF9B0034BF5D /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
-		0A77F1941D4BC2DF0034BF5D /* Resourceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resourceable.swift; sourceTree = "<group>"; };
-		0A77F1971D4BC2F70034BF5D /* EndpointResourceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointResourceable.swift; sourceTree = "<group>"; };
-		0A77F19A1D4BC3040034BF5D /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
-		0A77F19D1D4BC31C0034BF5D /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveJSON-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A77F19D1D4BC31C0034BF5D /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		0A9900821D3C20AB00E31891 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveJSON.h; sourceTree = "<group>"; };
-		0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
-		0ACBF0391CAC3A5000E4A915 /* QueryItems+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QueryItems+Ext.swift"; sourceTree = "<group>"; };
-		0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
-		0ACBF0401CAC3A9A00E4A915 /* ServiceHostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHostType.swift; sourceTree = "<group>"; };
+		0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactiveJSON.h; path = ../ReactiveJSON.h; sourceTree = "<group>"; };
 		0ACBF0431CAC43D100E4A915 /* EndpointPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointPathTests.swift; sourceTree = "<group>"; };
 		0ACBF0441CAC43D100E4A915 /* JSONRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequestTests.swift; sourceTree = "<group>"; };
 		0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParametersTests.swift; sourceTree = "<group>"; };
 		0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHostTypeTests.swift; sourceTree = "<group>"; };
 		0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADB4BBF1D638117008CF654 /* ReactiveJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Carthage.xcconfig; sourceTree = "<group>"; };
+		0AECB8261D5A2778003C0A70 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		0AECB8291D5A3145003C0A70 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		0AECB82C1D5A3337003C0A70 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A1C17A51CAC387600BEA3B8 /* Frameworks */ = {
+		0ADB4BAE1D637F3C008CF654 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A1C17B01CAC387600BEA3B8 /* Frameworks */ = {
+		0ADB4BBC1D638117008CF654 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1C17B41CAC387600BEA3B8 /* ReactiveJSON.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C4711CEFA542004A9032 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C47B1CEFA542004A9032 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A78C47F1CEFA542004A9032 /* ReactiveJSON.framework in Frameworks */,
+				0ADB4BC41D638117008CF654 /* ReactiveJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				0A9900821D3C20AB00E31891 /* README.md */,
-				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
-				0ACBF0331CAC3A3300E4A915 /* Source */,
+				0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */,
+				0ACBF0331CAC3A3300E4A915 /* ReactiveJSON */,
 				0A1C17B71CAC387600BEA3B8 /* Tests */,
 				0A1C17AA1CAC387600BEA3B8 /* Products */,
 			);
@@ -150,10 +90,8 @@
 		0A1C17AA1CAC387600BEA3B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */,
-				0A1C17B31CAC387600BEA3B8 /* ReactiveJSON-iOSTests.xctest */,
-				0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */,
-				0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */,
+				0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */,
+				0ADB4BBF1D638117008CF654 /* ReactiveJSONTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,24 +109,19 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		0ACBF0331CAC3A3300E4A915 /* Source */ = {
+		0ACBF0331CAC3A3300E4A915 /* ReactiveJSON */ = {
 			isa = PBXGroup;
 			children = (
-				0A77F1971D4BC2F70034BF5D /* EndpointResourceable.swift */,
-				0A77F19A1D4BC3040034BF5D /* Identifiable.swift */,
-				0ACBF0371CAC3A5000E4A915 /* JSONRequest.swift */,
+				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
+				0AECB8291D5A3145003C0A70 /* Enums.swift */,
+				0AECB82C1D5A3337003C0A70 /* Extensions.swift */,
+				0AECB8261D5A2778003C0A70 /* Protocols.swift */,
+				0A77F19D1D4BC31C0034BF5D /* Entity.swift */,
 				0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */,
-				0A1B2FB11D0FBBED00859A65 /* JSONService.swift */,
 				0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */,
 				0A5351461CF5E7AF00A8214B /* NetworkError.swift */,
-				0ACBF0391CAC3A5000E4A915 /* QueryItems+Ext.swift */,
-				0A77F19D1D4BC31C0034BF5D /* Resource.swift */,
-				0A77F1941D4BC2DF0034BF5D /* Resourceable.swift */,
-				0A1B2FBC1D105B5D00859A65 /* ResourceJSON.swift */,
-				0ACBF0401CAC3A9A00E4A915 /* ServiceHostType.swift */,
-				0A1B2FAE1D0FBBBE00859A65 /* Singleton.swift */,
-				0ACBF03A1CAC3A5000E4A915 /* String+Ext.swift */,
 			);
+			name = ReactiveJSON;
 			path = Source;
 			sourceTree = "<group>";
 		};
@@ -204,97 +137,52 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A1C17A61CAC387600BEA3B8 /* Headers */ = {
+		0ADB4BAF1D637F3C008CF654 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACBF0321CAC3A2B00E4A915 /* ReactiveJSON.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C4721CEFA542004A9032 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A78C48C1CEFA54F004A9032 /* ReactiveJSON.h in Headers */,
+				0ADB4BBA1D637F61008CF654 /* ReactiveJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A1C17A81CAC387600BEA3B8 /* ReactiveJSON-iOS */ = {
+		0ADB4BB11D637F3C008CF654 /* ReactiveJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1C17BB1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOS" */;
+			buildConfigurationList = 0ADB4BB91D637F3D008CF654 /* Build configuration list for PBXNativeTarget "ReactiveJSON" */;
 			buildPhases = (
-				0A1C17A41CAC387600BEA3B8 /* Sources */,
-				0A1C17A51CAC387600BEA3B8 /* Frameworks */,
-				0A1C17A61CAC387600BEA3B8 /* Headers */,
-				0A1C17A71CAC387600BEA3B8 /* Resources */,
+				0ADB4BAD1D637F3C008CF654 /* Sources */,
+				0ADB4BAE1D637F3C008CF654 /* Frameworks */,
+				0ADB4BAF1D637F3C008CF654 /* Headers */,
+				0ADB4BB01D637F3C008CF654 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ReactiveJSON-iOS";
-			productName = "Network-iOS";
-			productReference = 0A1C17A91CAC387600BEA3B8 /* ReactiveJSON.framework */;
+			name = ReactiveJSON;
+			productName = ReactiveJSON;
+			productReference = 0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0A1C17B21CAC387600BEA3B8 /* ReactiveJSON-iOSTests */ = {
+		0ADB4BBE1D638117008CF654 /* ReactiveJSONTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A1C17BE1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOSTests" */;
+			buildConfigurationList = 0ADB4BC71D638117008CF654 /* Build configuration list for PBXNativeTarget "ReactiveJSONTests" */;
 			buildPhases = (
-				0A1C17AF1CAC387600BEA3B8 /* Sources */,
-				0A1C17B01CAC387600BEA3B8 /* Frameworks */,
-				0A1C17B11CAC387600BEA3B8 /* Resources */,
-				0A1C17C11CAC388900BEA3B8 /* ShellScript */,
+				0ADB4BBB1D638117008CF654 /* Sources */,
+				0ADB4BBC1D638117008CF654 /* Frameworks */,
+				0ADB4BBD1D638117008CF654 /* Resources */,
+				0ADB4BD21D6383DB008CF654 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0A1C17B61CAC387600BEA3B8 /* PBXTargetDependency */,
+				0ADB4BC61D638117008CF654 /* PBXTargetDependency */,
 			);
-			name = "ReactiveJSON-iOSTests";
-			productName = "Network-iOSTests";
-			productReference = 0A1C17B31CAC387600BEA3B8 /* ReactiveJSON-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0A78C4741CEFA542004A9032 /* ReactiveJSON-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A78C4861CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOS" */;
-			buildPhases = (
-				0A78C4701CEFA542004A9032 /* Sources */,
-				0A78C4711CEFA542004A9032 /* Frameworks */,
-				0A78C4721CEFA542004A9032 /* Headers */,
-				0A78C4731CEFA542004A9032 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ReactiveJSON-macOS";
-			productName = "Network-macOS";
-			productReference = 0A78C4751CEFA542004A9032 /* ReactiveJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		0A78C47D1CEFA542004A9032 /* ReactiveJSON-macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A78C4891CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOSTests" */;
-			buildPhases = (
-				0A78C47A1CEFA542004A9032 /* Sources */,
-				0A78C47B1CEFA542004A9032 /* Frameworks */,
-				0A78C47C1CEFA542004A9032 /* Resources */,
-				0A78C4971CEFB1B4004A9032 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A78C4811CEFA542004A9032 /* PBXTargetDependency */,
-			);
-			name = "ReactiveJSON-macOSTests";
-			productName = "Network-macOSTests";
-			productReference = 0A78C47E1CEFA542004A9032 /* ReactiveJSON-iOSTests.xctest */;
+			name = ReactiveJSONTests;
+			productName = ReactiveJSONTests;
+			productReference = 0ADB4BBF1D638117008CF654 /* ReactiveJSONTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -306,17 +194,11 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
-					0A1C17A81CAC387600BEA3B8 = {
-						CreatedOnToolsVersion = 7.3;
+					0ADB4BB11D637F3C008CF654 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
-					0A1C17B21CAC387600BEA3B8 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					0A78C4741CEFA542004A9032 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					0A78C47D1CEFA542004A9032 = {
-						CreatedOnToolsVersion = 7.3;
+					0ADB4BBE1D638117008CF654 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -332,392 +214,118 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A1C17A81CAC387600BEA3B8 /* ReactiveJSON-iOS */,
-				0A1C17B21CAC387600BEA3B8 /* ReactiveJSON-iOSTests */,
-				0A78C4741CEFA542004A9032 /* ReactiveJSON-macOS */,
-				0A78C47D1CEFA542004A9032 /* ReactiveJSON-macOSTests */,
+				0ADB4BB11D637F3C008CF654 /* ReactiveJSON */,
+				0ADB4BBE1D638117008CF654 /* ReactiveJSONTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A1C17A71CAC387600BEA3B8 /* Resources */ = {
+		0ADB4BB01D637F3C008CF654 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A1C17B11CAC387600BEA3B8 /* Resources */ = {
+		0ADB4BBD1D638117008CF654 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A77F1921D4BBF9B0034BF5D /* users.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C4731CEFA542004A9032 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C47C1CEFA542004A9032 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A77F1931D4BBF9B0034BF5D /* users.json in Resources */,
+				0ADB4BCB1D638171008CF654 /* users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A1C17C11CAC388900BEA3B8 /* ShellScript */ = {
+		0ADB4BD21D6383DB008CF654 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				ReactiveCocoa,
+				Result,
+				Nimble,
+				Quick,
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		0A78C4971CEFB1B4004A9032 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/ReactiveCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Result.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Nimble.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "case \"$PLATFORM_NAME\" in\nmacosx) plat=Mac;;\niphone*) plat=iOS;;\nwatch*) plat=watchOS;;\ntv*) plat=tvOS;;\n*) echo \"error: Unknown PLATFORM_NAME: $PLATFORM_NAME\"; exit 1;;\nesac\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nframework=$(basename \"${!VAR}\")\nexport SCRIPT_INPUT_FILE_$n=\"$SRCROOT\"/Carthage/Build/$plat/\"$framework\".framework\ndone\n\n/usr/local/bin/carthage copy-frameworks || exit\n\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nsource=${!VAR}.dSYM\ndest=${BUILT_PRODUCTS_DIR}/$(basename \"$source\")\nditto \"$source\" \"$dest\" || exit\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A1C17A41CAC387600BEA3B8 /* Sources */ = {
+		0ADB4BAD1D637F3C008CF654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACBF03E1CAC3A5000E4A915 /* QueryItems+Ext.swift in Sources */,
-				0A77F18F1D4BB66F0034BF5D /* JSONResource.swift in Sources */,
-				0A77F1981D4BC2F70034BF5D /* EndpointResourceable.swift in Sources */,
-				0A77F1951D4BC2DF0034BF5D /* Resourceable.swift in Sources */,
-				0A1B2FAF1D0FBBBE00859A65 /* Singleton.swift in Sources */,
-				0ACBF0411CAC3A9A00E4A915 /* ServiceHostType.swift in Sources */,
-				0A77F19B1D4BC3040034BF5D /* Identifiable.swift in Sources */,
-				0ACBF03F1CAC3A5000E4A915 /* String+Ext.swift in Sources */,
-				0ACBF03C1CAC3A5000E4A915 /* JSONRequest.swift in Sources */,
-				0A5351471CF5E7AF00A8214B /* NetworkError.swift in Sources */,
-				0A77F18C1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */,
-				0A1B2FB21D0FBBED00859A65 /* JSONService.swift in Sources */,
-				0A1B2FBD1D105B5D00859A65 /* ResourceJSON.swift in Sources */,
-				0A77F19E1D4BC31C0034BF5D /* Resource.swift in Sources */,
+				0ADB4BD61D63860F008CF654 /* Entity.swift in Sources */,
+				0ADB4BD91D63860F008CF654 /* NetworkError.swift in Sources */,
+				0ADB4BD71D63860F008CF654 /* JSONResource.swift in Sources */,
+				0ADB4BD51D63860F008CF654 /* Protocols.swift in Sources */,
+				0ADB4BD81D63860F008CF654 /* Mapping+RAC.swift in Sources */,
+				0ADB4BD31D63860F008CF654 /* Enums.swift in Sources */,
+				0ADB4BD41D63860F008CF654 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A1C17AF1CAC387600BEA3B8 /* Sources */ = {
+		0ADB4BBB1D638117008CF654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1B2FB61D0FC9E400859A65 /* ServiceHostTypeTests.swift in Sources */,
-				0ACBF0481CAC43D100E4A915 /* EndpointPathTests.swift in Sources */,
-				0ACBF04F1CAC47FF00E4A915 /* Fixture.swift in Sources */,
-				0ACBF04A1CAC43D100E4A915 /* QueryParametersTests.swift in Sources */,
-				0ACBF0491CAC43D100E4A915 /* JSONRequestTests.swift in Sources */,
-				0A22CC0D1D22FC5200376962 /* ResourceJSONTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C4701CEFA542004A9032 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A78C4941CEFA706004A9032 /* String+Ext.swift in Sources */,
-				0A77F1901D4BB66F0034BF5D /* JSONResource.swift in Sources */,
-				0A77F1991D4BC2F70034BF5D /* EndpointResourceable.swift in Sources */,
-				0A77F1961D4BC2DF0034BF5D /* Resourceable.swift in Sources */,
-				0A1B2FB01D0FBBBE00859A65 /* Singleton.swift in Sources */,
-				0A78C4921CEFA706004A9032 /* JSONRequest.swift in Sources */,
-				0A77F19C1D4BC3040034BF5D /* Identifiable.swift in Sources */,
-				0A78C4931CEFA706004A9032 /* QueryItems+Ext.swift in Sources */,
-				0A78C4951CEFA706004A9032 /* ServiceHostType.swift in Sources */,
-				0A5351481CF5E7AF00A8214B /* NetworkError.swift in Sources */,
-				0A77F18D1D4BB5350034BF5D /* Mapping+RAC.swift in Sources */,
-				0A1B2FB31D0FBBED00859A65 /* JSONService.swift in Sources */,
-				0A1B2FBE1D105B5D00859A65 /* ResourceJSON.swift in Sources */,
-				0A77F19F1D4BC31C0034BF5D /* Resource.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A78C47A1CEFA542004A9032 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A1B2FB71D0FC9E500859A65 /* ServiceHostTypeTests.swift in Sources */,
-				0A78C48D1CEFA6E7004A9032 /* Fixture.swift in Sources */,
-				0A78C48E1CEFA6EA004A9032 /* EndpointPathTests.swift in Sources */,
-				0A78C4901CEFA6EF004A9032 /* QueryParametersTests.swift in Sources */,
-				0A78C48F1CEFA6EC004A9032 /* JSONRequestTests.swift in Sources */,
-				0A22CC0E1D22FC5200376962 /* ResourceJSONTests.swift in Sources */,
+				0ADB4BCA1D63816E008CF654 /* Fixture.swift in Sources */,
+				0ADB4BCC1D638175008CF654 /* EndpointPathTests.swift in Sources */,
+				0ADB4BCE1D638175008CF654 /* QueryParametersTests.swift in Sources */,
+				0ADB4BCD1D638175008CF654 /* JSONRequestTests.swift in Sources */,
+				0ADB4BCF1D638175008CF654 /* ResourceJSONTests.swift in Sources */,
+				0ADB4BD01D638175008CF654 /* ServiceHostTypeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A1C17B61CAC387600BEA3B8 /* PBXTargetDependency */ = {
+		0ADB4BC61D638117008CF654 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A1C17A81CAC387600BEA3B8 /* ReactiveJSON-iOS */;
-			targetProxy = 0A1C17B51CAC387600BEA3B8 /* PBXContainerItemProxy */;
-		};
-		0A78C4811CEFA542004A9032 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A78C4741CEFA542004A9032 /* ReactiveJSON-macOS */;
-			targetProxy = 0A78C4801CEFA542004A9032 /* PBXContainerItemProxy */;
+			target = 0ADB4BB11D637F3C008CF654 /* ReactiveJSON */;
+			targetProxy = 0ADB4BC51D638117008CF654 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A1C17A21CAC36C700BEA3B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				RESOURCES_TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		0A1C17A31CAC36C700BEA3B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */;
 			buildSettings = {
-			};
-			name = Release;
-		};
-		0A1C17BC1CAC387600BEA3B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOS";
-				PRODUCT_NAME = ReactiveJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0A1C17BD1CAC387600BEA3B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOS";
-				PRODUCT_NAME = ReactiveJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				RESOURCES_TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		0A1C17BF1CAC387600BEA3B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOSTests";
-				PRODUCT_NAME = "ReactiveJSON-iOSTests";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		0A1C17C01CAC387600BEA3B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Firebird.Network-iOSTests";
-				PRODUCT_NAME = "ReactiveJSON-iOSTests";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 3.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0A78C4871CEFA542004A9032 /* Debug */ = {
+		0ADB4BB71D637F3D008CF654 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -745,8 +353,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -762,24 +368,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-macOS/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOS";
-				PRODUCT_NAME = ReactiveJSON;
-				SDKROOT = macosx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinvitale.ReactiveJSON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		0A78C4881CEFA542004A9032 /* Release */ = {
+		0ADB4BB81D637F3D008CF654 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -808,7 +412,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -818,22 +421,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-macOS/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOS";
-				PRODUCT_NAME = ReactiveJSON;
-				SDKROOT = macosx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinvitale.ReactiveJSON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0A78C48A1CEFA542004A9032 /* Debug */ = {
+		0ADB4BC81D638117008CF654 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -856,8 +458,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -872,19 +472,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-macOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				INFOPLIST_FILE = ReactiveJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOSTests";
-				PRODUCT_NAME = "ReactiveJSON-iOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinvitale.ReactiveJSONTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		0A78C48B1CEFA542004A9032 /* Release */ = {
+		0ADB4BC91D638117008CF654 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -908,7 +506,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -917,12 +514,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Network-macOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				INFOPLIST_FILE = ReactiveJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Network-macOSTests";
-				PRODUCT_NAME = "ReactiveJSON-iOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinvitale.ReactiveJSONTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -939,41 +535,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A1C17BB1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOS" */ = {
+		0ADB4BB91D637F3D008CF654 /* Build configuration list for PBXNativeTarget "ReactiveJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A1C17BC1CAC387600BEA3B8 /* Debug */,
-				0A1C17BD1CAC387600BEA3B8 /* Release */,
+				0ADB4BB71D637F3D008CF654 /* Debug */,
+				0ADB4BB81D637F3D008CF654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		0A1C17BE1CAC387600BEA3B8 /* Build configuration list for PBXNativeTarget "ReactiveJSON-iOSTests" */ = {
+		0ADB4BC71D638117008CF654 /* Build configuration list for PBXNativeTarget "ReactiveJSONTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A1C17BF1CAC387600BEA3B8 /* Debug */,
-				0A1C17C01CAC387600BEA3B8 /* Release */,
+				0ADB4BC81D638117008CF654 /* Debug */,
+				0ADB4BC91D638117008CF654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A78C4861CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A78C4871CEFA542004A9032 /* Debug */,
-				0A78C4881CEFA542004A9032 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A78C4891CEFA542004A9032 /* Build configuration list for PBXNativeTarget "ReactiveJSON-macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A78C48A1CEFA542004A9032 /* Debug */,
-				0A78C48B1CEFA542004A9032 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
