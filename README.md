@@ -1,4 +1,12 @@
 # ReactiveJSON
+[![Version](https://img.shields.io/badge/version-v0.0.2-blue.svg)](https://github.com/KevinVitale/ReactiveJSON/releases/latest)
+![Platforms](https://img.shields.io/badge/platforms-ios%20%7C%20osx%20%7C%20tvos-lightgrey.svg)
+![Languages](https://img.shields.io/badge/languages-swift-orange.svg)
+![License](https://img.shields.io/badge/license-MIT%2FApache-blue.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][Carthage]
+
+[Carthage]: https://github.com/carthage/carthage
+
 ReactiveJSON is a Swift network framework for JSON services, built using [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa). The framework is minimally designed, yet still highly flexibile.
 
 Features includes:
