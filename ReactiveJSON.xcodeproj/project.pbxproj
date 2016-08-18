@@ -307,6 +307,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				RESOURCES_TARGETED_DEVICE_FAMILY = "1,2,3,4";
 				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
+				SWIFT_VERSION = 2.3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -320,6 +321,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				RESOURCES_TARGETED_DEVICE_FAMILY = "1,2,3,4";
 				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
+				SWIFT_VERSION = 2.3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -542,6 +544,7 @@
 				0ADB4BB81D637F3D008CF654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ADB4BC71D638117008CF654 /* Build configuration list for PBXNativeTarget "ReactiveJSONTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +553,7 @@
 				0ADB4BC91D638117008CF654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
