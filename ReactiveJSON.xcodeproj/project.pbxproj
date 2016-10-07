@@ -11,6 +11,7 @@
 		0ACC73ED1DA80C7500BE7654 /* ServiceHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73EC1DA80C7500BE7654 /* ServiceHost.swift */; };
 		0ACC73F01DA80D0F00BE7654 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73EF1DA80D0F00BE7654 /* Identity.swift */; };
 		0ACC73F31DA80DC100BE7654 /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */; };
+		0ACC73F51DA80E1200BE7654 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73F41DA80E1200BE7654 /* Resource.swift */; };
 		0ADB4BBA1D637F61008CF654 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ADB4BC41D638117008CF654 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */; };
 		0ADB4BCA1D63816E008CF654 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
@@ -55,6 +56,7 @@
 		0ACC73EC1DA80C7500BE7654 /* ServiceHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHost.swift; sourceTree = "<group>"; };
 		0ACC73EF1DA80D0F00BE7654 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConvertible.swift; sourceTree = "<group>"; };
+		0ACC73F41DA80E1200BE7654 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADB4BBF1D638117008CF654 /* ReactiveJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Carthage.xcconfig; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				0ACC73EF1DA80D0F00BE7654 /* Identity.swift */,
 				0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */,
+				0ACC73F41DA80E1200BE7654 /* Resource.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				0ACC73EB1DA80C3A00BE7654 /* Singleton.swift in Sources */,
 				0ACC73F01DA80D0F00BE7654 /* Identity.swift in Sources */,
 				0ADB4BD31D63860F008CF654 /* Enums.swift in Sources */,
+				0ACC73F51DA80E1200BE7654 /* Resource.swift in Sources */,
 				0ADB4BD41D63860F008CF654 /* Extensions.swift in Sources */,
 				0ACC73F31DA80DC100BE7654 /* JSONConvertible.swift in Sources */,
 			);

@@ -38,22 +38,6 @@ extension Singleton where Instance: ServiceHost {
     }
 }
 
-// MARK: - Resource -
-//------------------------------------------------------------------------------
-public protocol Resource: JSONConvertible, Identity {
-    /// The resource's attributes.
-    associatedtype Attributes
-
-    /// - parameter attributes: A native representation of the resource.
-    var attributes: Attributes? { get }
-}
-
-extension Resource where Attributes == JSONResource {
-    public subscript(key: String) -> AnyObject? {
-        return attributes?.json[key]
-    }
-}
-
 extension ServiceHost {
     /// - parameter baseURLString: _"(scheme)://(host)/(path?)"_
     static var baseURLString: String {
