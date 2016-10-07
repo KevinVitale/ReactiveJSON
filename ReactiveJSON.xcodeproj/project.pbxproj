@@ -121,7 +121,7 @@
 			children = (
 				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
 				0ACC73F11DA80D4C00BE7654 /* Response */,
-				0AECB8261D5A2778003C0A70 /* Protocols.swift */,
+				0ACC73F61DA80E8800BE7654 /* Request */,
 				0ACC73EE1DA80CAD00BE7654 /* Misc */,
 			);
 			name = ReactiveJSON;
@@ -143,7 +143,6 @@
 		0ACC73F11DA80D4C00BE7654 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				0AECB8291D5A3145003C0A70 /* AuthToken.swift */,
 				0A77F19D1D4BC31C0034BF5D /* Entity.swift */,
 				0ACC73EF1DA80D0F00BE7654 /* Identity.swift */,
 				0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */,
@@ -151,6 +150,15 @@
 				0ACC73F41DA80E1200BE7654 /* Resource.swift */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		0ACC73F61DA80E8800BE7654 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0AECB8291D5A3145003C0A70 /* AuthToken.swift */,
+				0AECB8261D5A2778003C0A70 /* Protocols.swift */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 		0AF594901D3A720600C1F11B /* Fixtures */ = {
