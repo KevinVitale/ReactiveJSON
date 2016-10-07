@@ -115,8 +115,8 @@
 		0ACBF0331CAC3A3300E4A915 /* ReactiveJSON */ = {
 			isa = PBXGroup;
 			children = (
-				0ACC73F11DA80D4C00BE7654 /* Response */,
 				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
+				0ACC73F11DA80D4C00BE7654 /* Response */,
 				0AECB8291D5A3145003C0A70 /* Enums.swift */,
 				0AECB8261D5A2778003C0A70 /* Protocols.swift */,
 				0A77F19D1D4BC31C0034BF5D /* Entity.swift */,
