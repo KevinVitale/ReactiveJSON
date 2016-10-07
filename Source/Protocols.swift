@@ -58,10 +58,8 @@ extension ServiceHost {
             return nil
         }
 
-        //----------------------------------------------------------------------
         var request: NSMutableURLRequest!
-
-        //----------------------------------------------------------------------
+        
         switch method {
         case .Put: fallthrough
         case .Post:
@@ -70,9 +68,9 @@ extension ServiceHost {
                 "application/x-www-form-urlencoded; charset=utf-8",
                 forHTTPHeaderField: "Content-Type"
             )
-           request.HTTPBody = parameters?.queryString().dataUsingEncoding(NSUTF8StringEncoding)
+            request.HTTPBody = parameters?.percentEncodedQuery?.dataUsingEncoding(NSUTF8StringEncoding)
         default:
-            components.queryItems = parameters?.queryItems()
+            components.percentEncodedQuery = parameters?.percentEncodedQuery
             request = NSMutableURLRequest(URL: components.URL!)
         }
 
@@ -89,7 +87,7 @@ extension ServiceHost {
         guard let request = URLRequest(endpoint, method: method, parameters: parameters, token: token) else {
             return SignalProducer(error: NetworkError.Unknown)
         }
-        
+
         return session
             .rac_dataWithRequest(request)
             .mapNetworkError()
