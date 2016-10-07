@@ -131,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				0AECB82C1D5A3337003C0A70 /* Extensions.swift */,
-				0ACC73EF1DA80D0F00BE7654 /* Identity.swift */,
 				0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */,
 				0A5351461CF5E7AF00A8214B /* NetworkError.swift */,
 				0ACC73EA1DA80C3A00BE7654 /* Singleton.swift */,
@@ -143,6 +142,7 @@
 		0ACC73F11DA80D4C00BE7654 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				0ACC73EF1DA80D0F00BE7654 /* Identity.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
