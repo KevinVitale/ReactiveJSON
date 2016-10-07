@@ -178,13 +178,3 @@ extension ServiceHost {
         }
     }
 }
-
-// MARK: - Singleton -
-//------------------------------------------------------------------------------
-public protocol Singleton {
-    /// The singleton's instance `TYPE` value.
-    associatedtype Instance
-
-    /// - parameter shared: The
-    static var shared: Instance { get }
-}
