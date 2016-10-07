@@ -115,17 +115,25 @@
 			children = (
 				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
 				0AECB8291D5A3145003C0A70 /* Enums.swift */,
-				0AECB82C1D5A3337003C0A70 /* Extensions.swift */,
 				0AECB8261D5A2778003C0A70 /* Protocols.swift */,
 				0A77F19D1D4BC31C0034BF5D /* Entity.swift */,
 				0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */,
+				0ACC73EE1DA80CAD00BE7654 /* Misc */,
+			);
+			name = ReactiveJSON;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0ACC73EE1DA80CAD00BE7654 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0AECB82C1D5A3337003C0A70 /* Extensions.swift */,
 				0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */,
 				0A5351461CF5E7AF00A8214B /* NetworkError.swift */,
 				0ACC73EA1DA80C3A00BE7654 /* Singleton.swift */,
 				0ACC73EC1DA80C7500BE7654 /* ServiceHost.swift */,
 			);
-			name = ReactiveJSON;
-			path = Source;
+			name = Misc;
 			sourceTree = "<group>";
 		};
 		0AF594901D3A720600C1F11B /* Fixtures */ = {
