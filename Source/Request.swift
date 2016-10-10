@@ -1,34 +1,6 @@
 import ReactiveCocoa
 import Result
 
-// MARK: - Identity -
-//------------------------------------------------------------------------------
-public protocol Identity {
-    /// The identity's `TYPE` value.
-    associatedtype Value: Hashable
-
-    /// - parameter id: A unique identifying value.
-    var id: Value? { get }
-}
-
-// MARK: - Int, Identity -
-//------------------------------------------------------------------------------
-extension Int: Identity {
-    public typealias Value = Int
-    public var id: Value? {
-        return self
-    }
-}
-
-// MARK: - String, Identity -
-//------------------------------------------------------------------------------
-extension String: Identity {
-    public typealias Value = String
-    public var id: Value? {
-        return self
-    }
-}
-
 // MARK: - JSON Service -
 //------------------------------------------------------------------------------
 extension Singleton where Instance: ServiceHost {
@@ -66,47 +38,6 @@ extension Singleton where Instance: ServiceHost {
     }
 }
 
-// MARK: - JSON Convertible -
-//------------------------------------------------------------------------------
-public protocol JSONConvertible {
-    /**
-     Parses the receiver from the given `json`, or returns `nil` if parsing faile.
-     
-     - parameter json: A JSON object.
-     - returns: An instance of `Self`, or `nil`.
-     */
-    init?(_ json: [String:AnyObject])
-}
-
-// MARK: - Resource -
-//------------------------------------------------------------------------------
-public protocol Resource: JSONConvertible, Identity {
-    /// The resource's attributes.
-    associatedtype Attributes
-
-    /// - parameter attributes: A native representation of the resource.
-    var attributes: Attributes? { get }
-}
-
-extension Resource where Attributes == JSONResource {
-    public subscript(key: String) -> AnyObject? {
-        return attributes?.json[key]
-    }
-}
-
-// MARK: - Service Host -
-//------------------------------------------------------------------------------
-public protocol ServiceHost {
-    /// - parameter scheme: The service's `scheme`. Example: `https`, `file`.
-    static var scheme: String { get }
-
-    /// - parameter host: The service's host. Example: `example.com`.
-    static var host: String { get }
-
-    /// - parameter path: An appended root path. Example: `v2`, `api`.
-    static var path: String? { get }
-}
-
 extension ServiceHost {
     /// - parameter baseURLString: _"(scheme)://(host)/(path?)"_
     static var baseURLString: String {
@@ -127,10 +58,8 @@ extension ServiceHost {
             return nil
         }
 
-        //----------------------------------------------------------------------
         var request: NSMutableURLRequest!
-
-        //----------------------------------------------------------------------
+        
         switch method {
         case .Put: fallthrough
         case .Post:
@@ -139,9 +68,9 @@ extension ServiceHost {
                 "application/x-www-form-urlencoded; charset=utf-8",
                 forHTTPHeaderField: "Content-Type"
             )
-           request.HTTPBody = parameters?.queryString().dataUsingEncoding(NSUTF8StringEncoding)
+            request.HTTPBody = parameters?.percentEncodedQuery?.dataUsingEncoding(NSUTF8StringEncoding)
         default:
-            components.queryItems = parameters?.queryItems()
+            components.percentEncodedQuery = parameters?.percentEncodedQuery
             request = NSMutableURLRequest(URL: components.URL!)
         }
 
@@ -158,7 +87,7 @@ extension ServiceHost {
         guard let request = URLRequest(endpoint, method: method, parameters: parameters, token: token) else {
             return SignalProducer(error: NetworkError.Unknown)
         }
-        
+
         return session
             .rac_dataWithRequest(request)
             .mapNetworkError()
@@ -177,14 +106,4 @@ extension ServiceHost {
                 }
         }
     }
-}
-
-// MARK: - Singleton -
-//------------------------------------------------------------------------------
-public protocol Singleton {
-    /// The singleton's instance `TYPE` value.
-    associatedtype Instance
-
-    /// - parameter shared: The
-    static var shared: Instance { get }
 }

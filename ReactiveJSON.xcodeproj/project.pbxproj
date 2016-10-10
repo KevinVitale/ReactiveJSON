@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ACC73EB1DA80C3A00BE7654 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73EA1DA80C3A00BE7654 /* Singleton.swift */; };
+		0ACC73ED1DA80C7500BE7654 /* ServiceHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73EC1DA80C7500BE7654 /* ServiceHost.swift */; };
+		0ACC73F01DA80D0F00BE7654 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73EF1DA80D0F00BE7654 /* Identity.swift */; };
+		0ACC73F31DA80DC100BE7654 /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */; };
+		0ACC73F51DA80E1200BE7654 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73F41DA80E1200BE7654 /* Resource.swift */; };
+		0ACC73F81DA80F1E00BE7654 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC73F71DA80F1E00BE7654 /* RequestMethod.swift */; };
 		0ADB4BBA1D637F61008CF654 /* ReactiveJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ADB4BC41D638117008CF654 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */; };
 		0ADB4BCA1D63816E008CF654 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */; };
@@ -15,9 +21,9 @@
 		0ADB4BCE1D638175008CF654 /* QueryParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */; };
 		0ADB4BCF1D638175008CF654 /* ResourceJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CC0C1D22FC5200376962 /* ResourceJSONTests.swift */; };
 		0ADB4BD01D638175008CF654 /* ServiceHostTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */; };
-		0ADB4BD31D63860F008CF654 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB8291D5A3145003C0A70 /* Enums.swift */; };
+		0ADB4BD31D63860F008CF654 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB8291D5A3145003C0A70 /* AuthToken.swift */; };
 		0ADB4BD41D63860F008CF654 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB82C1D5A3337003C0A70 /* Extensions.swift */; };
-		0ADB4BD51D63860F008CF654 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB8261D5A2778003C0A70 /* Protocols.swift */; };
+		0ADB4BD51D63860F008CF654 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECB8261D5A2778003C0A70 /* Request.swift */; };
 		0ADB4BD61D63860F008CF654 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F19D1D4BC31C0034BF5D /* Entity.swift */; };
 		0ADB4BD71D63860F008CF654 /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */; };
 		0ADB4BD81D63860F008CF654 /* Mapping+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */; };
@@ -47,11 +53,17 @@
 		0ACBF0451CAC43D100E4A915 /* QueryParametersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParametersTests.swift; sourceTree = "<group>"; };
 		0ACBF04C1CAC465400E4A915 /* ServiceHostTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHostTypeTests.swift; sourceTree = "<group>"; };
 		0ACBF04E1CAC47FF00E4A915 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		0ACC73EA1DA80C3A00BE7654 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		0ACC73EC1DA80C7500BE7654 /* ServiceHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHost.swift; sourceTree = "<group>"; };
+		0ACC73EF1DA80D0F00BE7654 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConvertible.swift; sourceTree = "<group>"; };
+		0ACC73F41DA80E1200BE7654 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		0ACC73F71DA80F1E00BE7654 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		0ADB4BB21D637F3C008CF654 /* ReactiveJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADB4BBF1D638117008CF654 /* ReactiveJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Carthage.xcconfig; sourceTree = "<group>"; };
-		0AECB8261D5A2778003C0A70 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		0AECB8291D5A3145003C0A70 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		0AECB8261D5A2778003C0A70 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		0AECB8291D5A3145003C0A70 /* AuthToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		0AECB82C1D5A3337003C0A70 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,16 +122,46 @@
 			isa = PBXGroup;
 			children = (
 				0ACBF0311CAC3A2B00E4A915 /* ReactiveJSON.h */,
-				0AECB8291D5A3145003C0A70 /* Enums.swift */,
-				0AECB82C1D5A3337003C0A70 /* Extensions.swift */,
-				0AECB8261D5A2778003C0A70 /* Protocols.swift */,
-				0A77F19D1D4BC31C0034BF5D /* Entity.swift */,
-				0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */,
-				0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */,
-				0A5351461CF5E7AF00A8214B /* NetworkError.swift */,
+				0ACC73F11DA80D4C00BE7654 /* Response */,
+				0ACC73F61DA80E8800BE7654 /* Request */,
+				0ACC73EE1DA80CAD00BE7654 /* Misc */,
 			);
 			name = ReactiveJSON;
 			path = Source;
+			sourceTree = "<group>";
+		};
+		0ACC73EE1DA80CAD00BE7654 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0AECB82C1D5A3337003C0A70 /* Extensions.swift */,
+				0A77F18B1D4BB5350034BF5D /* Mapping+RAC.swift */,
+				0A5351461CF5E7AF00A8214B /* NetworkError.swift */,
+				0ACC73EA1DA80C3A00BE7654 /* Singleton.swift */,
+				0ACC73EC1DA80C7500BE7654 /* ServiceHost.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		0ACC73F11DA80D4C00BE7654 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				0A77F19D1D4BC31C0034BF5D /* Entity.swift */,
+				0ACC73EF1DA80D0F00BE7654 /* Identity.swift */,
+				0ACC73F21DA80DC100BE7654 /* JSONConvertible.swift */,
+				0A77F18E1D4BB66F0034BF5D /* JSONResource.swift */,
+				0ACC73F41DA80E1200BE7654 /* Resource.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		0ACC73F61DA80E8800BE7654 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0AECB8291D5A3145003C0A70 /* AuthToken.swift */,
+				0AECB8261D5A2778003C0A70 /* Request.swift */,
+				0ACC73F71DA80F1E00BE7654 /* RequestMethod.swift */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 		0AF594901D3A720600C1F11B /* Fixtures */ = {
@@ -189,7 +231,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					0ADB4BB11D637F3C008CF654 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -260,13 +302,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACC73F81DA80F1E00BE7654 /* RequestMethod.swift in Sources */,
 				0ADB4BD61D63860F008CF654 /* Entity.swift in Sources */,
 				0ADB4BD91D63860F008CF654 /* NetworkError.swift in Sources */,
 				0ADB4BD71D63860F008CF654 /* JSONResource.swift in Sources */,
-				0ADB4BD51D63860F008CF654 /* Protocols.swift in Sources */,
+				0ACC73ED1DA80C7500BE7654 /* ServiceHost.swift in Sources */,
+				0ADB4BD51D63860F008CF654 /* Request.swift in Sources */,
 				0ADB4BD81D63860F008CF654 /* Mapping+RAC.swift in Sources */,
-				0ADB4BD31D63860F008CF654 /* Enums.swift in Sources */,
+				0ACC73EB1DA80C3A00BE7654 /* Singleton.swift in Sources */,
+				0ACC73F01DA80D0F00BE7654 /* Identity.swift in Sources */,
+				0ADB4BD31D63860F008CF654 /* AuthToken.swift in Sources */,
+				0ACC73F51DA80E1200BE7654 /* Resource.swift in Sources */,
 				0ADB4BD41D63860F008CF654 /* Extensions.swift in Sources */,
+				0ACC73F31DA80DC100BE7654 /* JSONConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +345,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
@@ -313,10 +378,28 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0ADB4BD11D6382E8008CF654 /* Carthage.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				RESOURCES_TARGETED_DEVICE_FAMILY = "1,2,3,4";
 				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos appletvsimulator iphonesimulator watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 2.3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -341,7 +424,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -399,7 +482,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
