@@ -23,8 +23,19 @@ class ResourceJSONTests: QuickSpec {
                 try! Fixture.set(file: "users")
 
                 let resource = MutableProperty(JSONResource())
-                resource <~ Fixture.request(endpoint: empty)
-                    .ignoreError()
+                resource <~ Fixture.request(endpoint: empty).ignoreError()
+                resource <~ Fixture.request(endpoint: empty).ignoreError()
+                resource <~ Fixture.request(endpoint: empty).ignoreError()
+                resource <~ Fixture.request(endpoint: empty).ignoreError()
+                resource <~ Fixture.request(endpoint: empty).ignoreError()
+                resource <~ Fixture.request(endpoint: empty).ignoreError()
+
+                resource.producer.startWithNext {
+                    print($0)
+                }
+                resource.signal.observeNext {
+                    print($0)
+                }
 
                 expect{ resource.value.json["username"] as? String
                     }.toEventually( equal("Moriah.Stanton") )

@@ -42,7 +42,7 @@ class JSONRequestTests: QuickSpec {
                     .startWithResult { (result: Result<[Int], NetworkError>) in
                         colors = result.value!
                 }
-                expect(colors.count).toEventually(equal(507), timeout: 5)
+                expect(colors.count).toEventually(equal(513), timeout: 5)
             }
         }
     }
