@@ -120,6 +120,8 @@ public enum NetworkError: ErrorType, CustomStringConvertible {
             text = LocalizedString("NetworkError_ConnectionLost", comment: "Error description")
         case IncorrectDataReturned:
             text = LocalizedString("NetworkError_IncorrectDataReturned", comment: "Error description")
+		case .Unauthorized:
+			text = LocalizedString("NetworkError_Unauthorized", comment: "Error description")
         }
         return text
     }
