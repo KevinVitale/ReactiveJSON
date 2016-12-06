@@ -63,10 +63,8 @@ public enum NetworkError: ErrorType, CustomStringConvertible {
                 self = .NotConnectedToInternet
             case NSURLErrorRedirectToNonExistentLocation, NSURLErrorBadServerResponse:
                 self = .IncorrectDataReturned
-            case NSURLErrorUserCancelledAuthentication:
-                self = .Unknown
-			case NSURLErrorUserAuthenticationRequired:
-				self = .Unauthorized
+            case NSURLErrorUserCancelledAuthentication, NSURLErrorUserAuthenticationRequired:
+                self = .Unauthorized
             case NSURLErrorZeroByteResource, NSURLErrorCannotDecodeRawData, NSURLErrorCannotDecodeContentData:
                 self = .IncorrectDataReturned
             case NSURLErrorCannotParseResponse:
