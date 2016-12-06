@@ -60,7 +60,6 @@ class JSONRequestTests: QuickSpec {
 				var error: NetworkError?
 				APITest.request(endpoint: "users")
 					.startWithResult { (result: Result<[AnyObject], NetworkError>) in
-						print(result)
 						error = result.error
 				}
 				expect(error).toEventually(equal(NetworkError.Unauthorized), timeout: 5)
