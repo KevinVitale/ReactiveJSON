@@ -20,6 +20,9 @@ extension Singleton where Instance: ServiceHost {
     public static func request<J: JSONConvertible>(endpoint endpoint: String, method: RequestMethod = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .None) -> SignalProducer<([J], NSURLResponse), NetworkError> {
         return Instance.request(endpoint: endpoint, method: method, parameters: parameters, token: token)
             .attemptMap{
+				if let httpResponse = $0.1 as? NSHTTPURLResponse where httpResponse == 401 {
+					return .Failure(NetworkError.Unauthorized)
+				}
                 switch $0.0 {
                 case let json as [[String:AnyObject]]:
                     return .Success(json.map({ J($0) }).flatMap({ $0 }), $0.1)
