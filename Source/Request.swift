@@ -10,6 +10,9 @@ extension Singleton where Instance: ServiceHost {
                 guard let t = $0.0 as? T else {
                     return .Failure(NetworkError.IncorrectDataReturned)
                 }
+				if let httpResponse = $0.1 as? NSHTTPURLResponse where httpResponse.statusCode == 401 {
+					return .Failure(NetworkError.Unauthorized)
+				}
                 return .Success(t, $0.1)
         }
     }
