@@ -1,4 +1,6 @@
 github "Quick/Nimble" "v4.1.0"
 github "Quick/Quick" "v0.9.3"
-github "antitypical/Result" "2.1.3"
-github "ReactiveCocoa/ReactiveCocoa" "v4.2.2"
+github "ReactiveCocoa/ReactiveObjC" "2.1.0"
+github "antitypical/Result" "3.1.0"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.3"
+github "ReactiveCocoa/ReactiveCocoa" "1961d6fe357830075396af2f289cdfe3e2127e9c"

@@ -6,7 +6,7 @@ import ReactiveCocoa
 
 // TODO: Delete Me
 struct GW2API: Singleton, ServiceHost {
-    private(set) static var shared = Instance()
+    fileprivate(set) static var shared = Instance()
     typealias Instance = GW2API
 
     static var scheme: String { return "https" }
@@ -17,7 +17,7 @@ struct GW2API: Singleton, ServiceHost {
 // https://github.com/operationstrategy/iOS_APITest
 // APITest MUST be running locally for tests to pass against this service host
 struct APITest: Singleton, ServiceHost {
-	private(set) static var shared = Instance()
+	fileprivate(set) static var shared = Instance()
 	typealias Instance = APITest
 	
 	static var scheme: String { return "http" }

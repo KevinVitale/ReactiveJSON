@@ -13,5 +13,10 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+PlaygroundUtility.remap
 
+# SwiftPM
+.build
+
+# Carthage
 Carthage/Build

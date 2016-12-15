@@ -3,7 +3,7 @@ public struct JSONResource: JSONConvertible {
     // MARK: - Public -
     //--------------------------------------------------------------------------
     /// - parameter json: The response object used to initialize the value.
-    public private(set) var json: [String:AnyObject] = [:]
+    public fileprivate(set) var json: [String:AnyObject] = [:]
 
     // MARK: - Initializaiton -
     //--------------------------------------------------------------------------
