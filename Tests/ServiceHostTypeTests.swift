@@ -38,15 +38,15 @@ class ServiceHostTypeTests: QuickSpec {
 
             it("generates URL request from endpoint path, with parameters") {
                 let endpointPath = "colors"
-                let request = GW2API.URLRequest(endpointPath, parameters: ["kevin": "true"])
-                let components = NSURLComponents(URL: request!.URL!, resolvingAgainstBaseURL: true)
+                let request = GW2API.URLRequest(endpointPath, parameters: ["kevin": "true" as AnyObject])
+                let components = NSURLComponents(url: request!.url!, resolvingAgainstBaseURL: true)
                 expect(components?.queryItems).toNot(beNil())
             }
 
             it("generates URL request from endpoint path, with 'POST' method") {
                 let endpointPath = "colors"
                 let request = GW2API.URLRequest(endpointPath, method: .Post)
-                expect(request?.HTTPMethod).to(equal(RequestMethod.Post.rawValue))
+                expect(request?.httpMethod).to(equal(RequestMethod.Post.rawValue))
             }
         }
     }

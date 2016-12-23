@@ -1,6 +1,4 @@
-import ReactiveCocoa
 import ReactiveSwift
-import ReactiveObjC
 import Result
 
 // MARK: - JSON Service -
@@ -44,7 +42,7 @@ extension Singleton where Instance: ServiceHost {
     public static func request<J: JSONConvertible>(endpoint: String, method: RequestMethod = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .none) -> SignalProducer<J, NetworkError> {
         return request(endpoint: endpoint, method: method, parameters: parameters, token: token)
             .flatMap(.merge) { (values: [J], response: URLResponse) in
-                SignalProducer<J, NetworkError>(values:values)
+                SignalProducer<J, NetworkError>(values)
         }
     }
 }
@@ -94,13 +92,13 @@ extension ServiceHost {
     }
     
     //--------------------------------------------------------------------------
-    static func request(_ session: URLSession = URLSession.shared, endpoint: String, method: RequestMethod = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .none) -> SignalProducer<(AnyObject, URLResponse), NetworkError> {
+    static func request(_ session: URLSession = URLSession.shared, endpoint: String, method: RequestMethod = .Get, parameters: [String:AnyObject]? = nil, token: AuthToken = .none) -> SignalProducer<(Any, URLResponse), NetworkError> {
         guard let request = URLRequest(endpoint, method: method, parameters: parameters, token: token) else {
             return SignalProducer(error: NetworkError.unknown)
         }
 
-        return session
-            .rac_dataWithRequest(request)
+        return session.reactive
+            .data(with: request)
             .mapNetworkError()
             .mapJSONResponse()
     }
