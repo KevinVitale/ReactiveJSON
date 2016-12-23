@@ -6,72 +6,75 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
-internal func LocalizedString(key: String, comment: String?) -> String {
-    return NSLocalizedString(key, bundle: NSBundle.mainBundle(), comment: comment ?? "")
+internal func LocalizedString(_ key: String, comment: String?) -> String {
+    return NSLocalizedString(key, bundle: Bundle.main, comment: comment ?? "")
 }
 
 import Foundation
 
-public enum NetworkError: ErrorType, CustomStringConvertible {
+public enum NetworkError: Error, CustomStringConvertible {
     /// Unknown or not supported error.
-    case Unknown
+    case unknown
 
     /// Not connected to the internet.
-    case NotConnectedToInternet
+    case notConnectedToInternet
 
     /// International data roaming turned off.
-    case InternationalRoamingOff
+    case internationalRoamingOff
 
     /// Cannot reach the server.
-    case NotReachedServer
+    case notReachedServer
 
     /// Connection is lost.
-    case ConnectionLost
+    case connectionLost
 
     /// Incorrect data returned from the server.
-    case IncorrectDataReturned
+    case incorrectDataReturned
+	
+	/// Request returned Unauthorized
+	case unauthorized
 
     internal init(error: NSError) {
         if error.domain == NSURLErrorDomain {
             switch error.code {
             case NSURLErrorUnknown:
-                self = .Unknown
+                self = .unknown
             case NSURLErrorCancelled:
-                self = .Unknown // Cancellation is not used in this project.
+                self = .unknown // Cancellation is not used in this project.
             case NSURLErrorBadURL:
-                self = .IncorrectDataReturned // Because it is caused by a bad URL returned in a JSON response from the server.
+                self = .incorrectDataReturned // Because it is caused by a bad URL returned in a JSON response from the server.
             case NSURLErrorTimedOut:
-                self = .NotReachedServer
+                self = .notReachedServer
             case NSURLErrorUnsupportedURL:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case NSURLErrorCannotFindHost, NSURLErrorCannotConnectToHost:
-                self = .NotReachedServer
+                self = .notReachedServer
             case NSURLErrorDataLengthExceedsMaximum:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case NSURLErrorNetworkConnectionLost:
-                self = .ConnectionLost
+                self = .connectionLost
             case NSURLErrorDNSLookupFailed:
-                self = .NotReachedServer
+                self = .notReachedServer
             case NSURLErrorHTTPTooManyRedirects:
-                self = .Unknown
+                self = .unknown
             case NSURLErrorResourceUnavailable:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case NSURLErrorNotConnectedToInternet:
-                self = .NotConnectedToInternet
+                self = .notConnectedToInternet
             case NSURLErrorRedirectToNonExistentLocation, NSURLErrorBadServerResponse:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case NSURLErrorUserCancelledAuthentication, NSURLErrorUserAuthenticationRequired:
-                self = .Unknown
+                self = .unauthorized
             case NSURLErrorZeroByteResource, NSURLErrorCannotDecodeRawData, NSURLErrorCannotDecodeContentData:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case NSURLErrorCannotParseResponse:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case NSURLErrorInternationalRoamingOff:
-                self = .InternationalRoamingOff
+                self = .internationalRoamingOff
             case NSURLErrorCallIsActive, NSURLErrorDataNotAllowed, NSURLErrorRequestBodyStreamExhausted:
-                self = .Unknown
+                self = .unknown
             case NSURLErrorFileDoesNotExist, NSURLErrorFileIsDirectory:
-                self = .IncorrectDataReturned
+                self = .incorrectDataReturned
             case
             NSURLErrorNoPermissionsToReadFile,
             NSURLErrorSecureConnectionFailed,
@@ -90,31 +93,33 @@ public enum NetworkError: ErrorType, CustomStringConvertible {
             NSURLErrorCannotMoveFile,
             NSURLErrorDownloadDecodingFailedMidStream,
             NSURLErrorDownloadDecodingFailedToComplete:
-                self = .Unknown
+                self = .unknown
             default:
-                self = .Unknown
+                self = .unknown
             }
         }
         else {
-            self = .Unknown
+            self = .unknown
         }
     }
 
     public var description: String {
         let text: String
         switch self {
-        case Unknown:
+        case .unknown:
             text = LocalizedString("NetworkError_Unknown", comment: "Error description")
-        case NotConnectedToInternet:
+        case .notConnectedToInternet:
             text = LocalizedString("NetworkError_NotConnectedToInternet", comment: "Error description")
-        case InternationalRoamingOff:
+        case .internationalRoamingOff:
             text = LocalizedString("NetworkError_InternationalRoamingOff", comment: "Error description")
-        case NotReachedServer:
+        case .notReachedServer:
             text = LocalizedString("NetworkError_NotReachedServer", comment: "Error description")
-        case ConnectionLost:
+        case .connectionLost:
             text = LocalizedString("NetworkError_ConnectionLost", comment: "Error description")
-        case IncorrectDataReturned:
+        case .incorrectDataReturned:
             text = LocalizedString("NetworkError_IncorrectDataReturned", comment: "Error description")
+		case .unauthorized:
+			text = LocalizedString("NetworkError_Unauthorized", comment: "Error description")
         }
         return text
     }
