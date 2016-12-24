@@ -1,8 +1,8 @@
 import Quick
 import Nimble
 import ReactiveJSON
+import ReactiveSwift
 import Result
-import ReactiveCocoa
 
 // TODO: Delete Me
 struct GW2API: Singleton, ServiceHost {
@@ -40,7 +40,7 @@ class JSONRequestTests: QuickSpec {
 
             it("handles request as 'dictionary'") {
                 var colors: [String:AnyObject] = [:]
-                GW2API.request(endpoint: "colors", parameters: ["id": 4])
+                GW2API.request(endpoint: "colors", parameters: ["id": 4 as AnyObject])
                     .startWithResult {
                         colors = $0.value!
                 }
@@ -48,12 +48,12 @@ class JSONRequestTests: QuickSpec {
             }
 
             it("handles request as 'int' collection") {
-                var colors = []
+                var colors: [Int]? 
                 GW2API.request(endpoint: "colors")
                     .startWithResult { (result: Result<[Int], NetworkError>) in
-                        colors = result.value!
+                        colors = result.value 
                 }
-                expect(colors.count).toEventually(equal(513), timeout: 5)
+                expect(colors?.count).toEventually(equal(513), timeout: 5)
             }
 			
 			it("handles 401 (unauthorized) requests") {
@@ -62,7 +62,7 @@ class JSONRequestTests: QuickSpec {
 					.startWithResult { (result: Result<[AnyObject], NetworkError>) in
 						error = result.error
 				}
-				expect(error).toEventually(equal(NetworkError.Unauthorized), timeout: 5)
+				expect(error).toEventually(equal(NetworkError.unauthorized), timeout: 5)
 			}
         }
     }

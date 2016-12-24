@@ -1,5 +1,5 @@
 import ReactiveJSON
-import ReactiveCocoa
+import ReactiveSwift
 
 /// - parameter empty: This empty string can prevent requests from
 ///   generating invalid file fixture paths.
@@ -33,8 +33,8 @@ public enum FixtureError: Error, CustomStringConvertible {
 
 extension Fixture {
     public static func set(file name: String) throws {
-        guard let url = NSBundle.testOrMainBundle().URLForResource(name, withExtension: "json")
-            , let components = NSURLComponents(URL: url, resolvingAgainstBaseURL: false)
+        guard let url = Bundle.testOrMainBundle().url(forResource: name, withExtension: "json")
+            , let components = NSURLComponents(url: url, resolvingAgainstBaseURL: false)
             , let scheme = components.scheme, scheme == "file"
             , let path = components.path else {
                 throw FixtureError.fileNotFound(name)
@@ -46,12 +46,11 @@ extension Fixture {
         try set(file: name)
 
         let request: SignalProducer<T, NetworkError> = Fixture.request(endpoint: empty)
-        let observer = Observer<T, NetworkError>(
+        let observer = Observer<T, NetworkError> (
+            value: next,
             failed: failed,
             completed: { File.host = ""; completed?() },
-            interrupted:
-            interrupted,
-            next: next
+            interrupted: interrupted
         )
 
         request.start(observer)
@@ -68,16 +67,17 @@ public struct EndpointResource<R: Resource>: EndpointResourceable where R.Attrib
     //--------------------------------------------------------------------------
     public typealias Index = Int
     public typealias Element = R
-    public typealias Iterator = IndexingIterator<[Element]>
     //--------------------------------------------------------------------------
     fileprivate let data: [Element]
     //--------------------------------------------------------------------------
     public var startIndex: Index { return data.startIndex }
     public var endIndex: Index { return data.endIndex }
-    public func makeIterator() -> IndexingIterator<[Element]> {
-        return data.makeIterator()
+    
+    public func index(after i: Int) -> Int {
+        return data.index(after: i)
     }
-    public subscript (position: Index) -> Iterator.Element {
+    
+    public subscript (position: Index) -> Element {
         return data[position]
     }
     //--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ public struct EndpointResource<R: Resource>: EndpointResourceable where R.Attrib
 // MARK: -
 // MARK: Extension, NSBundle
 // MARK: -
-extension NSBundle {
+extension Bundle {
     fileprivate final class _DummyClass { }
 
     /**
@@ -102,13 +102,13 @@ extension NSBundle {
      
      - returns: `Test` or `Main` bundle.
      */
-    fileprivate class func testOrMainBundle() -> NSBundle {
-        let bundles = NSBundle
-            .allBundles()
+    fileprivate class func testOrMainBundle() -> Bundle {
+        let bundles = Bundle
+            .allBundles
             .filter {
                 return ($0.bundlePath as NSString).pathExtension == "xctest"
         }
-        return bundles.first ?? self.mainBundle()
+        return bundles.first ?? .main
     }
 }
 

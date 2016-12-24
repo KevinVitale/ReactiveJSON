@@ -1,3 +1,2 @@
-github "ReactiveCocoa/ReactiveCocoa" "1961d6fe357830075396af2f289cdfe3e2127e9c"
-github "ReactiveCocoa/ReactiveObjC" ~> 2.1
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-rc.3"
 

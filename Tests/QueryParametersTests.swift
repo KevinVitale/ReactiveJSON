@@ -11,16 +11,16 @@ class QueryParametersTests: QuickSpec {
             }
 
             it("handles 'ids' parameter (comma-separated)") {
-                let params: [String:AnyObject] = [ "ids" : "1,2,3,4,5" ]
+                let params: [String:AnyObject] = [ "ids" : "1,2,3,4,5" as AnyObject ]
                 expect(params.percentEncodedQuery).to(equal("ids=1,2,3,4,5"))
             }
 
             it("handles url-encoding (special characters)") {
                 let params: [String:AnyObject] = [
-                    "email": "this+thing1@someplace.com",
-                    "name": "Thing 1",
-                    "password": "A12345!",
-                    "username": "thing1",
+                    "email": "this+thing1@someplace.com" as AnyObject,
+                    "name": "Thing 1" as AnyObject,
+                    "password": "A12345!" as AnyObject,
+                    "username": "thing1" as AnyObject,
                 ]
 
                 expect(params.percentEncodedQuery).to(equal("email=this+thing1@someplace.com&name=Thing%201&password=A12345!&username=thing1"))
