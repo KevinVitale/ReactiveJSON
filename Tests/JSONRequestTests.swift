@@ -4,7 +4,6 @@ import ReactiveJSON
 import ReactiveSwift
 import Result
 
-// TODO: Delete Me
 struct GW2API: Singleton, ServiceHost {
     fileprivate(set) static var shared = Instance()
     typealias Instance = GW2API
@@ -13,18 +12,6 @@ struct GW2API: Singleton, ServiceHost {
     static var host: String { return "api.guildwars2.com" }
     static var path: String? { return "v2" }
 }
-
-// https://github.com/operationstrategy/iOS_APITest
-// APITest MUST be running locally for tests to pass against this service host
-struct APITest: Singleton, ServiceHost {
-	fileprivate(set) static var shared = Instance()
-	typealias Instance = APITest
-	
-	static var scheme: String { return "http" }
-	static var host: String { return "0.0.0.0:8080" }
-	static var path: String? { return nil }
-}
-
 
 class JSONRequestTests: QuickSpec {
     override func spec() {
@@ -55,15 +42,6 @@ class JSONRequestTests: QuickSpec {
                 }
                 expect(colors?.count).toEventually(equal(513), timeout: 5)
             }
-			
-			it("handles 401 (unauthorized) requests") {
-				var error: NetworkError?
-				APITest.request(endpoint: "users")
-					.startWithResult { (result: Result<[AnyObject], NetworkError>) in
-						error = result.error
-				}
-				expect(error).toEventually(equal(NetworkError.unauthorized), timeout: 5)
-			}
         }
     }
 }
