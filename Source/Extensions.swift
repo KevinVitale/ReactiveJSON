@@ -1,14 +1,14 @@
 // MARK: - Extension, Query Items -
 //------------------------------------------------------------------------------
 extension Dictionary where Value: AnyObject {
-    private var queryItems: [NSURLQueryItem] {
+    fileprivate var queryItems: [URLQueryItem] {
         return map { (key: Key, value: AnyObject) in ("\(key)", value.description) }
-            .map(NSURLQueryItem.init)
-            .sort { $0.0.name < $0.1.name }
+            .map(URLQueryItem.init)
+            .sorted { $0.0.name < $0.1.name }
     }
 
     var percentEncodedQuery: String? {
-        let components = NSURLComponents()
+        var components = URLComponents()
         components.queryItems = queryItems
         let percentEncodedQuery = components.percentEncodedQuery
         return percentEncodedQuery

@@ -1,19 +1,17 @@
 import Quick
 import Nimble
 import ReactiveJSON
+import ReactiveSwift
 import Result
-import ReactiveCocoa
 
-// TODO: Delete Me
 struct GW2API: Singleton, ServiceHost {
-    private(set) static var shared = Instance()
+    fileprivate(set) static var shared = Instance()
     typealias Instance = GW2API
 
     static var scheme: String { return "https" }
     static var host: String { return "api.guildwars2.com" }
     static var path: String? { return "v2" }
 }
-
 
 class JSONRequestTests: QuickSpec {
     override func spec() {
@@ -29,7 +27,7 @@ class JSONRequestTests: QuickSpec {
 
             it("handles request as 'dictionary'") {
                 var colors: [String:AnyObject] = [:]
-                GW2API.request(endpoint: "colors", parameters: ["id": 4])
+                GW2API.request(endpoint: "colors", parameters: ["id": 4 as AnyObject])
                     .startWithResult {
                         colors = $0.value!
                 }
@@ -37,12 +35,12 @@ class JSONRequestTests: QuickSpec {
             }
 
             it("handles request as 'int' collection") {
-                var colors = []
+                var colors: [Int]? 
                 GW2API.request(endpoint: "colors")
                     .startWithResult { (result: Result<[Int], NetworkError>) in
-                        colors = result.value!
+                        colors = result.value 
                 }
-                expect(colors.count).toEventually(equal(513), timeout: 5)
+                expect(colors?.count).toEventually(equal(513), timeout: 5)
             }
         }
     }

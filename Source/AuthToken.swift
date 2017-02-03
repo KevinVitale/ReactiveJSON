@@ -1,13 +1,13 @@
 // MARK: - Auth Token -
 //------------------------------------------------------------------------------
 public enum AuthToken: Equatable {
-    case OAuth2(token: String)
-    case None
+    case oAuth2(token: String)
+    case none
 
     //--------------------------------------------------------------------------
     func apply(to request: NSMutableURLRequest) {
         switch self {
-        case .OAuth2(let token):
+        case .oAuth2(let token):
             request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         default: ()
         }
@@ -18,8 +18,8 @@ public enum AuthToken: Equatable {
 //------------------------------------------------------------------------------
 public func ==(lhs: AuthToken, rhs: AuthToken) -> Bool {
     switch (lhs, rhs) {
-    case (.None, .None): return true
-    case (.OAuth2(let lhsToken), .OAuth2(let rhsToken)): return lhsToken == rhsToken
+    case (.none, .none): return true
+    case (.oAuth2(let lhsToken), .oAuth2(let rhsToken)): return lhsToken == rhsToken
     default: return false
     }
 }
